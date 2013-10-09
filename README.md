@@ -1,4 +1,14 @@
-cmpe273-project
-===============
+Event Planner
+=====================
 
-Project for CMPE273, Team members Arun Malik, Mishal Shah, Kavish Parikh, Shashank Garg
+$ mvn clean package
+
+$ bin/run.sh 
+
+# How to run the app  forever
+$ bin/run-forever.sh
+
+Endpoint: http://localhost:8080/planaevent
+
+Admin: http://localhost:8081/
+
