@@ -80,7 +80,7 @@ public class StakeHolders extends LinksDto{
 		}
 	}
 	
-	public void getStakeHolders()
+	public static void getStakeHolders()
 	{
 		DataAccess dao =null;
 		try{

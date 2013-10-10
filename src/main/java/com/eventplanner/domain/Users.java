@@ -29,6 +29,9 @@ public class Users extends LinksDto {
 	private String name;
 	@Id @ObjectId
 	private int id;
+	@NotEmpty(message ="Password cannot be blank.")
+	private String userPassword;
+
 	
 	@JsonProperty("name")
 	public String getName() {
@@ -46,6 +49,13 @@ public class Users extends LinksDto {
 		this.userNameEmail = userNameEmail;
 	}
 	
+	@JsonProperty("Password")
+	public String getUserPassword() {
+		return userPassword;
+	}
+	public void setUserPassword(String password) {
+		this.userPassword = userPassword;
+	}
 
 	public int getUserPhone() {
 		return userPhone;

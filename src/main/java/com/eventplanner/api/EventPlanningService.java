@@ -1,6 +1,6 @@
 package com.eventplanner.api;
 
-import com.eventplanner.config.DbConfig;
+//import com.eventplanner.config.DbConfig;
 import com.eventplanner.config.EventPlanningServiceConfiguration;
 import com.eventplanner.resources.LoginResource;
 import com.yammer.dropwizard.Service;
@@ -24,7 +24,7 @@ public class EventPlanningService extends Service<EventPlanningServiceConfigurat
 	environment.addResource(new LoginResource());
 	
 	
-	DbConfig.setDBConnectionVariables();
+	//DbConfig.setDBConnectionVariables();
     }
 
 }
