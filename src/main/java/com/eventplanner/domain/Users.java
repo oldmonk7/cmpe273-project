@@ -22,12 +22,15 @@ public class Users extends LinksDto {
 	
 	@NotEmpty(message ="Email ID cannot be  blank.")
 	private String userNameEmail;
+	
 	private int userPhone;
+	
 	@NotEmpty(message ="Name cannot be  blank.")
 	private String name;
 	@Id @ObjectId
 	private int id;
 	
+	@JsonProperty("name")
 	public String getName() {
 		return name;
 	}
