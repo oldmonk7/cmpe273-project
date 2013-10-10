@@ -177,7 +177,7 @@ public class DataAccess {
 	 * @return
 	 */
 	public Find findData(String collection, String condition){
-		return jongo.getCollection(collection).find(condition);
+		return jongo.getCollection(collection).find(s);
 	}
 	
 	/**
