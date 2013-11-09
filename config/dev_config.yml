@@ -8,6 +8,16 @@ http:
 
   # The port on which the HTTP server listens for administrative requests.
   adminPort: 8081
+  
+#  Data base connection 
+dbhost: localhost
+dbport: 27017
+databasename: eventdb
+dbusername: root
+dbpassword: root
+dbcollectionusers: users
+dbcollectionstakeholders: stakeHolders
+dbcollectionplans: plans
 
 # Logging settings.
 logging:

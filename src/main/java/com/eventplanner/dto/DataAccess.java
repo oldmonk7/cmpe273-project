@@ -2,15 +2,12 @@ package com.eventplanner.dto;
 
 import java.net.UnknownHostException;
 import java.util.List;
-
 import org.bson.types.ObjectId;
 import org.jongo.Find;
 import org.jongo.FindOne;
 import org.jongo.Jongo;
 import org.jongo.MongoCollection;
-
 import com.eventplanner.config.DbConfig;
-import com.eventplanner.domain.Users;
 import com.mongodb.Mongo;
 
 public class DataAccess {
@@ -177,7 +174,7 @@ public class DataAccess {
 	 * @return
 	 */
 	public Find findData(String collection, String condition){
-		return jongo.getCollection(collection).find(s);
+		return jongo.getCollection(collection).find(condition);
 	}
 	
 	/**
@@ -188,6 +185,15 @@ public class DataAccess {
 	 */
 	public FindOne findOneData(String collection, String condition){
 		return jongo.getCollection(collection).findOne(condition);
+	}
+	
+	public FindOne findOneData(String collection){
+		return jongo.getCollection(collection).findOne();
+	}
+	
+	public Find find(String collection){
+		return jongo.getCollection(collection).find();
+		
 	}
 	
 	

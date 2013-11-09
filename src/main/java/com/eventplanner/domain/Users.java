@@ -1,8 +1,9 @@
 package com.eventplanner.domain;
 
+import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.List;
 
-//import org.eclipse.jetty.server.Authentication.User;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.jongo.marshall.jackson.oid.Id;
 import org.jongo.marshall.jackson.oid.ObjectId;
@@ -21,48 +22,55 @@ public class Users extends LinksDto {
 	}
 	
 	@NotEmpty(message ="Email ID cannot be  blank.")
-	private String userNameEmail;
+	private String email;
 	
-	private int userPhone;
+	private Double phone;
 	
 	@NotEmpty(message ="Name cannot be  blank.")
 	private String name;
-	@Id @ObjectId
-	private int id;
+	@Id @ObjectId 
+    private String key;
 	@NotEmpty(message ="Password cannot be blank.")
-	private String userPassword;
+	private String password;
 
+	
+	public String getKey() {
+		return key;
+	}
+	public void setKey(String key) {
+		this.key = key;
+	}
 	
 	@JsonProperty("name")
 	public String getName() {
-		return name;
+		return name.toLowerCase();
 	}
 	public void setName(String name) {
-		this.name = name;
+		this.name = name.toLowerCase();
 	}
 	
 	@JsonProperty("email")
-	public String getUserNameEmail() {
-		return userNameEmail;
+	public String getEmail() {
+		return email;
 	}
-	public void setUserNameEmail(String userNameEmail) {
-		this.userNameEmail = userNameEmail;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
-	@JsonProperty("Password")
-	public String getUserPassword() {
-		return userPassword;
+	@JsonProperty("password")
+	public String getPassword() {
+		return password;
 	}
-	public void setUserPassword(String password) {
-		this.userPassword = userPassword;
-	}
-
-	public int getUserPhone() {
-		return userPhone;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
-	public void setUserPhone(int userPhone) {
-		this.userPhone = userPhone;
+	public Double getPhone() {
+		return phone;
+	}
+
+	public void setPhone(Double phone) {
+		this.phone = phone;
 	}
 	
 	public void saveUser()
@@ -73,7 +81,6 @@ public class Users extends LinksDto {
 			dao.saveData(DbConfig.collectionUsers, this);
 		}
 		 catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		finally
@@ -85,16 +92,19 @@ public class Users extends LinksDto {
 		}
 	}
 	
-	public void getUsers()
+	public Iterable<Users> getUsers()
 	{
 		DataAccess dao =null;
+		Iterable<Users> users = null;
 		try{
 			dao = new DataAccess();
-			dao.getDataFromCollection(DbConfig.collectionUsers);
+			users = dao.find(DbConfig.collectionUsers).as(Users.class);
+			return users;
 		}
 		 catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				return users;
 			}
 		finally
 		{
@@ -137,7 +147,7 @@ public class Users extends LinksDto {
 		Users filteredUser = null;
 		try{
 			dao = new DataAccess();
-			filteredUser =dao.findOneData(DbConfig.collectionUsers,condition).as(Users.class);
+			filteredUser = dao.findOneData(DbConfig.collectionUsers,condition).as(Users.class);
 			return filteredUser;
 		}
 		 catch (Exception e) {
@@ -155,6 +165,23 @@ public class Users extends LinksDto {
 				filteredUser = null;
 			}
 		}
+	}
+	
+	public Users findUserByName(String name)
+	{
+		return findUser("{name : \""+name.toLowerCase()+"\" }");
+	
+	}
+	
+	public List<String> toList()
+	{
+		List<String> obj = new ArrayList<String>();
+		obj.add("ID : " + this.key);
+		obj.add("Name : " + this.name);
+		obj.add("Phone : " + this.phone.longValue());
+		obj.add("Email : " + this.email);
+		return obj;	
+	
 	}
 
 }

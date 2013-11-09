@@ -1,12 +1,7 @@
-/**
- * 
- */
 package com.eventplanner.common;
 
 //import org.apache.commons.codec.binary.Base64;
 import java.io.*;
-import java.util.*;
-
 import org.apache.commons.httpclient.*;
 import org.apache.commons.httpclient.methods.PostMethod;
 
@@ -28,13 +23,13 @@ public class StormPathAuthentication {
 		
 			 userToCreate.getName();
 		     //HttpClient httpClient = new HttpClient("");
-		     String url = "http://search.yahoo.com/search";
+//		     String url = "http://search.yahoo.com/search";
 		     //try {
 		      HttpClient client = new HttpClient();
 		      PostMethod method = new PostMethod("https://api.stormpath.com/v1/applications/5AwlNi9zqtl972Kr4gr77E");
 		      method.addParameter("givenName",userToCreate.getName());
-		      method.addParameter("Email",userToCreate.getUserNameEmail());	
-		      method.addParameter("Password",userToCreate.getUserPassword());
+		      method.addParameter("Email",userToCreate.getEmail());	
+		      method.addParameter("Password",userToCreate.getPassword());
 		      //method.addParameter("Status",userToCreate.getName());
 		      String contents = null;
 		  	 // Execute the POST method

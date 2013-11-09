@@ -1,4 +1,10 @@
-WARN  [2013-10-09 12:41:13,458] com.yammer.dropwizard.config.ServerFactory: 
+INFO  [2013-11-09 08:16:03,306] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 08:16:03,307] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 08:16:03,308] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-09 08:16:03,308] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 08:16:05,362] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 08:16:05,363] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-11-09 08:18:07,634] com.yammer.dropwizard.config.ServerFactory: 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
@@ -8,35 +14,33 @@ WARN  [2013-10-09 12:41:13,458] com.yammer.dropwizard.config.ServerFactory:
 !      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-INFO  [2013-10-09 12:41:13,533] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
-INFO  [2013-10-09 12:41:13,535] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
-INFO  [2013-10-09 12:41:13,745] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
-INFO  [2013-10-09 12:41:13,835] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+INFO  [2013-11-09 08:18:07,711] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-11-09 08:18:07,713] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-09 08:18:07,813] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-09 08:18:07,876] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
 
-    POST    /signup/customer (com.eventplanner.resources.LoginResource)
-    POST    /signup/serviceprovider (com.eventplanner.resources.LoginResource)
+    GET     /signup (com.eventplanner.api.resources.LoginResource)
+    GET     /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/serviceprovider (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
 
-INFO  [2013-10-09 12:41:13,836] com.yammer.dropwizard.config.Environment: tasks = 
+INFO  [2013-11-09 08:18:07,876] com.yammer.dropwizard.config.Environment: tasks = 
 
     POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
 
-INFO  [2013-10-09 12:41:14,181] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
-INFO  [2013-10-09 12:41:14,186] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
-INFO  [2013-10-09 12:43:49,012] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
-INFO  [2013-10-09 12:43:49,013] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
-INFO  [2013-10-09 12:43:49,014] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
-INFO  [2013-10-09 12:43:49,014] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/arunmalik/Malik/Projects/Git/cmpe273-project/eventplanner/target/classes/}
-INFO  [2013-10-09 12:43:51,068] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/arunmalik/Malik/Projects/Git/cmpe273-project/eventplanner/target/classes/}
-INFO  [2013-10-09 12:43:51,069] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
-<<<<<<< HEAD
-<<<<<<< HEAD
-WARN  [2013-10-09 22:00:47,393] com.yammer.dropwizard.config.ServerFactory: 
-=======
-WARN  [2013-10-09 23:45:24,874] com.yammer.dropwizard.config.ServerFactory: 
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
-=======
-WARN  [2013-10-09 23:45:24,874] com.yammer.dropwizard.config.ServerFactory: 
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
+INFO  [2013-11-09 08:18:08,231] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 08:18:08,237] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 08:19:28,402] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 08:19:28,403] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 08:19:28,404] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-09 08:19:28,404] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 08:19:30,458] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 08:19:30,458] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-11-09 08:19:32,143] com.yammer.dropwizard.config.ServerFactory: 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
@@ -46,62 +50,33 @@ WARN  [2013-10-09 23:45:24,874] com.yammer.dropwizard.config.ServerFactory:
 !      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-<<<<<<< HEAD
-<<<<<<< HEAD
-INFO  [2013-10-09 22:00:47,477] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
-INFO  [2013-10-09 22:00:47,479] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
-INFO  [2013-10-09 22:00:47,672] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
-INFO  [2013-10-09 22:00:47,745] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
-=======
-=======
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
-INFO  [2013-10-09 23:45:24,938] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
-INFO  [2013-10-09 23:45:24,940] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
-INFO  [2013-10-09 23:45:25,044] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
-INFO  [2013-10-09 23:45:25,090] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
-<<<<<<< HEAD
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
-=======
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
+INFO  [2013-11-09 08:19:32,220] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-11-09 08:19:32,222] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-09 08:19:32,327] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-09 08:19:32,391] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
 
-    POST    /signup/customer (com.eventplanner.resources.LoginResource)
-    POST    /signup/serviceprovider (com.eventplanner.resources.LoginResource)
+    GET     /signup (com.eventplanner.api.resources.LoginResource)
+    GET     /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/serviceprovider (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-INFO  [2013-10-09 22:00:47,746] com.yammer.dropwizard.config.Environment: tasks = 
+INFO  [2013-11-09 08:19:32,392] com.yammer.dropwizard.config.Environment: tasks = 
 
     POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
 
-INFO  [2013-10-09 22:00:48,158] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
-INFO  [2013-10-09 22:00:48,163] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
-INFO  [2013-10-09 22:36:20,414] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
-INFO  [2013-10-09 22:36:20,416] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
-INFO  [2013-10-09 22:36:20,417] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
-INFO  [2013-10-09 22:36:20,417] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/shankey/Apps/cmpe-273/cmpe273-project/target/classes/}
-INFO  [2013-10-09 22:36:22,471] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/shankey/Apps/cmpe-273/cmpe273-project/target/classes/}
-INFO  [2013-10-09 22:36:22,472] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
-WARN  [2013-10-09 22:36:29,226] com.yammer.dropwizard.config.ServerFactory: 
-=======
-=======
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
-INFO  [2013-10-09 23:45:25,090] com.yammer.dropwizard.config.Environment: tasks = 
-
-    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
-
-INFO  [2013-10-09 23:45:25,343] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
-INFO  [2013-10-09 23:45:25,349] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
-INFO  [2013-10-09 23:45:55,026] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
-INFO  [2013-10-09 23:45:55,027] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
-INFO  [2013-10-09 23:45:55,029] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
-INFO  [2013-10-09 23:45:55,030] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/arunmalik/Malik/Projects/Git/cmpe273-project/target/classes/}
-INFO  [2013-10-09 23:45:57,084] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/arunmalik/Malik/Projects/Git/cmpe273-project/target/classes/}
-INFO  [2013-10-09 23:45:57,084] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
-WARN  [2013-10-10 01:15:37,551] com.yammer.dropwizard.config.ServerFactory: 
-<<<<<<< HEAD
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
-=======
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
+INFO  [2013-11-09 08:19:32,738] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 08:19:32,746] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 08:20:59,695] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 08:20:59,696] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 08:20:59,698] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-09 08:20:59,698] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 08:21:01,751] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 08:21:01,752] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-11-09 08:37:54,736] com.yammer.dropwizard.config.ServerFactory: 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
@@ -111,39 +86,36 @@ WARN  [2013-10-10 01:15:37,551] com.yammer.dropwizard.config.ServerFactory:
 !      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-<<<<<<< HEAD
-<<<<<<< HEAD
-INFO  [2013-10-09 22:36:29,308] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
-INFO  [2013-10-09 22:36:29,310] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
-INFO  [2013-10-09 22:36:29,439] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
-INFO  [2013-10-09 22:36:29,501] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
-=======
-=======
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
-INFO  [2013-10-10 01:15:37,616] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
-INFO  [2013-10-10 01:15:37,618] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
-INFO  [2013-10-10 01:15:37,711] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
-INFO  [2013-10-10 01:15:37,766] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
-<<<<<<< HEAD
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
+INFO  [2013-11-09 08:37:54,811] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-11-09 08:37:54,813] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-09 08:37:54,925] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-09 08:37:54,990] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
 
-    POST    /signup/customer (com.eventplanner.resources.LoginResource)
-    POST    /signup/serviceprovider (com.eventplanner.resources.LoginResource)
+    GET     /signup (com.eventplanner.api.resources.LoginResource)
+    GET     /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/serviceprovider (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /stakeholders/{cat} (com.eventplanner.api.resources.StakeHolderResource)
+    POST    /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
 
-<<<<<<< HEAD
-INFO  [2013-10-09 22:36:29,501] com.yammer.dropwizard.config.Environment: tasks = 
+INFO  [2013-11-09 08:37:54,991] com.yammer.dropwizard.config.Environment: tasks = 
 
     POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
 
-INFO  [2013-10-09 22:36:29,879] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
-INFO  [2013-10-09 22:36:29,883] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
-INFO  [2013-10-09 22:37:38,540] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
-INFO  [2013-10-09 22:37:38,541] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
-INFO  [2013-10-09 22:37:38,543] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
-INFO  [2013-10-09 22:37:38,543] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/shankey/Apps/cmpe-273/cmpe273-project/target/classes/}
-INFO  [2013-10-09 22:37:40,597] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/shankey/Apps/cmpe-273/cmpe273-project/target/classes/}
-INFO  [2013-10-09 22:37:40,597] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
-WARN  [2013-10-09 22:38:12,988] com.yammer.dropwizard.config.ServerFactory: 
+INFO  [2013-11-09 08:37:55,329] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 08:37:55,339] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 08:40:59,207] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 08:40:59,208] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 08:40:59,209] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-09 08:40:59,209] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 08:41:01,262] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 08:41:01,262] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-11-09 08:42:20,847] com.yammer.dropwizard.config.ServerFactory: 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
@@ -153,39 +125,344 @@ WARN  [2013-10-09 22:38:12,988] com.yammer.dropwizard.config.ServerFactory:
 !      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-INFO  [2013-10-09 22:38:13,075] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
-INFO  [2013-10-09 22:38:13,077] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
-INFO  [2013-10-09 22:38:13,199] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
-INFO  [2013-10-09 22:38:13,267] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
-=======
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
+INFO  [2013-11-09 08:42:20,925] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-11-09 08:42:20,928] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-09 08:42:21,037] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-09 08:42:21,105] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
 
-    POST    /signup/customer (com.eventplanner.resources.LoginResource)
-    POST    /signup/serviceprovider (com.eventplanner.resources.LoginResource)
+    GET     /signup (com.eventplanner.api.resources.LoginResource)
+    GET     /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/serviceprovider (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /stakeholders/{cat} (com.eventplanner.api.resources.StakeHolderResource)
+    POST    /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
 
-<<<<<<< HEAD
-INFO  [2013-10-09 22:38:13,267] com.yammer.dropwizard.config.Environment: tasks = 
-
-    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
-
-INFO  [2013-10-09 22:38:13,595] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
-INFO  [2013-10-09 22:38:13,600] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
-=======
-=======
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
-INFO  [2013-10-10 01:15:37,766] com.yammer.dropwizard.config.Environment: tasks = 
+INFO  [2013-11-09 08:42:21,105] com.yammer.dropwizard.config.Environment: tasks = 
 
     POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
 
-INFO  [2013-10-10 01:15:38,035] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
-INFO  [2013-10-10 01:15:38,039] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
-INFO  [2013-10-10 01:16:05,353] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
-INFO  [2013-10-10 01:16:05,353] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
-INFO  [2013-10-10 01:16:05,355] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
-INFO  [2013-10-10 01:16:05,355] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/arunmalik/Malik/Projects/Git/cmpe273-project/target/classes/}
-INFO  [2013-10-10 01:16:07,409] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/arunmalik/Malik/Projects/Git/cmpe273-project/target/classes/}
-INFO  [2013-10-10 01:16:07,409] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
-<<<<<<< HEAD
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
-=======
->>>>>>> 43c511b293d743921426f470a27bf782fe255bff
+INFO  [2013-11-09 08:42:21,466] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 08:42:21,473] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 08:44:00,310] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 08:44:00,311] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 08:44:00,313] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-09 08:44:00,313] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 08:44:02,368] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 08:44:02,368] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-11-09 08:57:21,637] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-09 08:57:21,713] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-11-09 08:57:21,715] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-09 08:57:21,819] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-09 08:57:21,885] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /signup (com.eventplanner.api.resources.LoginResource)
+    GET     /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/serviceprovider (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /stakeholders/{category} (com.eventplanner.api.resources.StakeHolderResource)
+    POST    /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
+
+INFO  [2013-11-09 08:57:21,885] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-09 08:57:22,227] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 08:57:22,241] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 08:59:50,226] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 08:59:50,227] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 08:59:50,228] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-09 08:59:50,228] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 08:59:52,283] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 08:59:52,283] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-11-09 08:59:53,955] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-09 08:59:54,030] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-11-09 08:59:54,032] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-09 08:59:54,138] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-09 08:59:54,203] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /signup (com.eventplanner.api.resources.LoginResource)
+    GET     /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/serviceprovider (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /stakeholders/{category} (com.eventplanner.api.resources.StakeHolderResource)
+    POST    /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
+
+INFO  [2013-11-09 08:59:54,204] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-09 08:59:54,548] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 08:59:54,558] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 09:00:13,887] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 09:00:13,888] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 09:00:13,890] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-09 09:00:13,890] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 09:00:15,943] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 09:00:15,943] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-11-09 09:00:21,259] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-09 09:00:21,360] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-11-09 09:00:21,362] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-09 09:00:21,482] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-09 09:00:21,579] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /signup (com.eventplanner.api.resources.LoginResource)
+    GET     /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/serviceprovider (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /stakeholders/{category} (com.eventplanner.api.resources.StakeHolderResource)
+    POST    /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
+
+INFO  [2013-11-09 09:00:21,580] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-09 09:00:22,114] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 09:00:22,126] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-09 09:02:41,091] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-09 09:02:41,177] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-11-09 09:02:41,179] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-09 09:02:41,277] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-09 09:02:41,342] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /signup (com.eventplanner.api.resources.LoginResource)
+    GET     /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/serviceprovider (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /stakeholders/{category} (com.eventplanner.api.resources.StakeHolderResource)
+    POST    /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
+
+INFO  [2013-11-09 09:02:41,343] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-09 09:02:41,685] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 09:02:41,693] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 09:04:23,459] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 09:04:23,459] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 09:04:23,461] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-09 09:04:23,461] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 09:04:25,514] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 09:04:25,514] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-11-09 09:06:54,182] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-09 09:06:54,256] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-11-09 09:06:54,258] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-09 09:06:54,358] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-09 09:06:54,425] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /signup (com.eventplanner.api.resources.LoginResource)
+    GET     /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/serviceprovider (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /stakeholders/{category} (com.eventplanner.api.resources.StakeHolderResource)
+    POST    /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
+
+INFO  [2013-11-09 09:06:54,425] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-09 09:06:54,787] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 09:06:54,801] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 09:31:08,088] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 09:31:08,089] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 09:31:08,090] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-09 09:31:08,090] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 09:31:10,145] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 09:31:10,145] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-11-09 09:48:13,949] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-09 09:48:14,023] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-11-09 09:48:14,025] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-09 09:48:14,128] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-09 09:48:14,193] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /signup (com.eventplanner.api.resources.LoginResource)
+    GET     /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/serviceprovider (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /stakeholders/{category} (com.eventplanner.api.resources.StakeHolderResource)
+    POST    /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
+
+INFO  [2013-11-09 09:48:14,194] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-09 09:48:14,537] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 09:48:14,543] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 09:48:17,550] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 09:48:17,551] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 09:48:17,553] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-09 09:48:17,553] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 09:48:19,607] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 09:48:19,608] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-11-09 09:48:40,016] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-09 09:48:40,091] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-11-09 09:48:40,094] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-09 09:48:40,191] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-09 09:48:40,272] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /signup (com.eventplanner.api.resources.LoginResource)
+    GET     /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/serviceprovider (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /stakeholders/{category} (com.eventplanner.api.resources.StakeHolderResource)
+    POST    /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
+    GET     /plan (com.eventplanner.api.resources.PlanResource)
+    GET     /plan/{number} (com.eventplanner.api.resources.PlanResource)
+    POST    /plan (com.eventplanner.api.resources.PlanResource)
+
+INFO  [2013-11-09 09:48:40,272] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-09 09:48:40,688] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 09:48:40,698] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 09:50:29,473] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 09:50:29,475] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 09:50:29,485] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-09 09:50:29,485] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 09:50:31,537] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 09:50:31,537] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-11-09 09:54:30,902] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-09 09:54:30,977] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-11-09 09:54:30,979] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-09 09:54:31,088] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-09 09:54:31,155] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /signup (com.eventplanner.api.resources.LoginResource)
+    GET     /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/customer (com.eventplanner.api.resources.LoginResource)
+    POST    /signup/serviceprovider (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /stakeholders/{category} (com.eventplanner.api.resources.StakeHolderResource)
+    POST    /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
+    GET     /plan (com.eventplanner.api.resources.PlanResource)
+    GET     /plan/{number} (com.eventplanner.api.resources.PlanResource)
+    POST    /plan (com.eventplanner.api.resources.PlanResource)
+
+INFO  [2013-11-09 09:54:31,155] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-09 09:54:31,513] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 09:54:31,519] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 09:55:07,619] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-11-09 09:55:07,620] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-09 09:55:07,621] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-09 09:55:07,622] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 09:55:09,674] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/Users/malik/Documents/Projects/Git/cmpe273-project/target/classes/}
+INFO  [2013-11-09 09:55:09,675] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}

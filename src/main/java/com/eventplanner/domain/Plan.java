@@ -1,5 +1,6 @@
 package com.eventplanner.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.jongo.marshall.jackson.oid.Id;
@@ -11,23 +12,23 @@ import com.eventplanner.dto.LinksDto;
 
 public class Plan extends LinksDto {
 	
-	//private static int planKey;
+	private static int planKey;
 	
 	public Plan() {
-		//this.setId(++planKey);
+		this.setNumber(++planKey);
 	}
 	
-	@Id @ObjectId
-	private int id;
+	@Id @ObjectId 
+    private String key;
+	private int number;
 	private Users user;
 	private List<StakeHolders> stakeHolders;
 	
-	public int getId() {
-		return id;
+	public String getKey() {
+		return key;
 	}
-
-	public void setId(int id) {
-		this.id = id;
+	public void setKey(String key) {
+		this.key = key;
 	}
 
 	public Users getUser() {
@@ -75,16 +76,19 @@ public class Plan extends LinksDto {
 		}
 	}
 	
-	public void getPlans()
+	public Iterable<Plan> getPlans()
 	{
 		DataAccess dao =null;
+		Iterable<Plan> plans = null;
 		try{
 			dao = new DataAccess();
-			dao.getDataFromCollection(DbConfig.collectionPlans);
+			plans = dao.find(DbConfig.collectionPlans).as(Plan.class);
+			return plans;
 		}
 		 catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				return plans;
 			}
 		finally
 		{
@@ -92,21 +96,25 @@ public class Plan extends LinksDto {
 			{
 				dao =null;
 			}
+			if(plans!=null)
+			{
+				plans =null;
+			}
 		}
 	}
 	
-	public List<Plan> findStakeHolders(String condition)
+	public Iterable<Plan> findPlans(String condition)
 	{
 		DataAccess dao =null;
 		Iterable<Plan> filteredPlans = null;
 		try{
 			dao = new DataAccess();
 			filteredPlans =dao.findData(DbConfig.collectionPlans,condition).as(Plan.class);
-			return (List<Plan>) filteredPlans;
+			return filteredPlans;
 		}
 		 catch (Exception e) {
 			 e.printStackTrace();
-			 return (List<Plan>) filteredPlans;	
+			 return filteredPlans;	
 			}
 		finally
 		{
@@ -121,7 +129,7 @@ public class Plan extends LinksDto {
 		}
 	}
 	
-	public Plan findStakeHolder(String condition)
+	public Plan findPlan(String condition)
 	{
 		DataAccess dao =null;
 		Plan filteredPlan = null;
@@ -146,6 +154,49 @@ public class Plan extends LinksDto {
 			}
 		}
 	}
+
+	/**
+	 * @return the number
+	 */
+	public int getNumber() {
+		return number;
+	}
+
+	/**
+	 * @param number the number to set
+	 */
+	public void setNumber(int number) {
+		this.number = number;
+	}
+	
+	public List<String> toList()
+	{
+		List<String> obj = new ArrayList<String>();
+		obj.add("ID : " + this.key);
+		obj.add("Plan Number : " + this.number);
+		obj.add("User : " + this.getUser());
+		obj.add("StakeHolders : " + this.getStakeHolders());
+		return obj;	
+	
+	}
+	
+	
+	
+	public Plan findPlanByNumber(int number)
+	{
+		try{
+			return findPlan("{number : "+number+"}");
+		}
+		 catch (Exception e) {
+			 e.printStackTrace();
+			 return null;	
+			}
+		finally
+		{
+			
+		}
+	}
+
 
 
 

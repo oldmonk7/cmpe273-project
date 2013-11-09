@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script>
+
+  
+
+
+
+    /*$( "#signup" ).submit(function( event ) {
+
+  // Stop form from submitting normally
+  event.preventDefault();
+
+  // Get some values from elements on the page:
+  var $form = $( this ),
+  term = $form.find( "input[name='s']" ).val(),
+  url = $form.attr( "action" );
+
+  // Send the data using post
+  var posting = $.post( url, { s: term } );
+
+  // Put the results in a div
+  posting.done(function( data ) {
+    var content = $( data ).find( "#content" );
+    $( "#result" ).empty().append( content );
+});
+});*/
+
+
+
+
+
+
+
+    $("#signup").click(function(){
+
+         alert($("#inputEmail1").val);
+
+          $.ajax({
+            url:         "http://localhost:8080/signup/customer",
+            type:        "POST",
+            data:        JSON.stringify({ email: $("#inputEmail1").val(),
+                                          password: $("#inputPassword1").val(),
+                                          phone: $("#inputPhone").val()
+                                        }),
+            contentType: "application/json; charset=utf-8",
+            dataType:    "json",
+            success:     function(){
+                alert("You are signed up!");
+            }
+          })
+        })
+    </script>
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="../../assets/ico/favicon.png">
+	<title>Customer Sign Up</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="starter-template.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+        <script src="../../assets/js/html5shiv.js"></script>
+        <script src="../../assets/js/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+
+    <body>
+
+    	<div class="navbar navbar-inverse navbar-fixed-top">
+    		<div class="container">
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				</button>
+    				<a class="navbar-brand" href="#">Event Planner</a>
+    			</div>
+    			<div class="collapse navbar-collapse">
+    				<ul class="nav navbar-nav">
+    					<li class="active"><a href="#">Home</a></li>
+    					<li><a href="#about">About</a></li>
+    					<li><a href="#contact">Contact</a></li>
+    					<li class="dropdown" id="menu1" class="nav pull-right">
+    						<a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+    							Login
+    							<b class="caret"></b>
+    						</a>
+    						<div class="dropdown-menu">
+    							<form style="margin: 0px" accept-charset="UTF-8" action="/sessions" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" />
+    								<input name="authenticity_token" type="hidden" value=${user} /></div>
+    								<fieldset class='textbox' style="padding:10px">
+    									<input style="margin-top: 8px" type="text" placeholder="Username" />
+    									<input style="margin-top: 8px" type="password" placeholder="Passsword" />
+    									<input class="btn-primary" name="commit" type="submit" value="Log In" />
+    								</fieldset>
+    							</form>
+    						</div>
+    					</li>
+    				</ul>
+    			</div><!--/.nav-collapse -->
+    		</div>
+    	</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <div class="container well" >
+    	<form class="form-horizontal" role="form" method="POST" action="">
+    		<div class="form-group">
+    			<label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+    			<div class="col-lg-4">
+    				<input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<label for="inputPassword1" class="col-lg-2 control-label">Password</label>
+    			<div class="col-lg-2">
+    				<input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<label for="inputPhone" class="col-lg-2 control-label">Phone</label>
+    			<div class="col-lg-2">
+    				<input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+    			</div> (optional)
+    		</div>
+    		<div class="form-group">
+    			<div class="col-lg-offset-2 col-lg-2">
+    				<button type="submit" class="btn btn-primary" id="signup">Sign Up!</button>
+    			</div>
+    		</div>
+    	</form>
+
+    </div>
+
+    
+  
+
+
+
+
+
+</body>
+</html>
