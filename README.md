@@ -12,3 +12,7 @@ Endpoint: http://localhost:8080/planaevent
 
 Admin: http://localhost:8081/
 
+UI
+------------------
+
+http://localhost:8080/home
