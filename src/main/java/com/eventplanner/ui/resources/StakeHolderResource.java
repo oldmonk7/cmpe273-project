@@ -1,13 +1,13 @@
 package com.eventplanner.ui.resources;
 
 
+import com.eventplanner.domain.StakeHolders;
+import com.eventplanner.ui.views.StakeHolderView;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-
-import com.eventplanner.domain.StakeHolders;
-import com.eventplanner.ui.views.StakeHolderView;
 
 @Path("/test")
 @Produces(MediaType.TEXT_HTML)
@@ -23,6 +23,7 @@ public class StakeHolderResource {
 //    public StakeHolderResource(StakeHolders stakeholder) {
 //	this.stakeholder = stakeholder;
 //    }
+
 
    
 
