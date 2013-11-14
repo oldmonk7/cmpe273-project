@@ -223,7 +223,7 @@
     <div class="col-lg-4">
       <div class="checkbox">
         <label>
-          <input name="category[]"type="checkbox" value:"food" id="food"> Food
+          <input name="category[]"type="checkbox" value="food" id="food"> Food
         </label>
       </div>
     </div>

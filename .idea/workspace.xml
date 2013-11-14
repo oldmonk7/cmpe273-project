@@ -118,7 +118,7 @@
       <file leaf-file-name="serviceprovider.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/serviceprovider.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="8" selection-start="7043" selection-end="7043" vertical-scroll-proportion="0.0">
+            <state line="242" column="8" selection-start="7051" selection-end="7051" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -933,7 +933,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/serviceprovider.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="8" selection-start="7043" selection-end="7043" vertical-scroll-proportion="0.0">
+        <state line="242" column="8" selection-start="7051" selection-end="7051" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
