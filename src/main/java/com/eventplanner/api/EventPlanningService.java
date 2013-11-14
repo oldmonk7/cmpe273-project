@@ -6,10 +6,7 @@ import com.eventplanner.api.resources.RootResources;
 import com.eventplanner.api.resources.UserResource;
 import com.eventplanner.config.DbConfig;
 import com.eventplanner.config.EventPlanningServiceConfiguration;
-import com.eventplanner.ui.resources.CustomerResource;
-import com.eventplanner.ui.resources.HomeResource;
-import com.eventplanner.ui.resources.SignUpResource;
-import com.eventplanner.ui.resources.StakeHolderResource;
+import com.eventplanner.ui.resources.*;
 import com.yammer.dropwizard.Service;
 import com.yammer.dropwizard.assets.AssetsBundle;
 import com.yammer.dropwizard.config.Bootstrap;
@@ -55,6 +52,7 @@ public class EventPlanningService extends Service<EventPlanningServiceConfigurat
         environment.addResource(SignUpResource.class);
         environment.addResource(HomeResource.class);
         environment.addResource(CustomerResource.class);
+        environment.addResource(ServiceProviderResource.class);
 	
 	
 	
