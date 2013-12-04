@@ -1,9 +1,6 @@
 package com.eventplanner.api;
 
-import com.eventplanner.api.resources.LoginResource;
-import com.eventplanner.api.resources.PlanResource;
-import com.eventplanner.api.resources.RootResources;
-import com.eventplanner.api.resources.UserResource;
+import com.eventplanner.api.resources.*;
 import com.eventplanner.config.DbConfig;
 import com.eventplanner.config.EventPlanningServiceConfiguration;
 import com.eventplanner.ui.resources.*;
@@ -53,9 +50,10 @@ public class EventPlanningService extends Service<EventPlanningServiceConfigurat
         environment.addResource(HomeResource.class);
         environment.addResource(CustomerResource.class);
         environment.addResource(ServiceProviderResource.class);
-	
-	
-	
+        environment.addResource(MakePlanResource.class);
+
+
+
     }
 
 }

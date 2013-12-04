@@ -16,22 +16,21 @@ import java.util.List;
 
 
 
-    public class HomeView extends View {
+public class MakePlanView extends View {
 
     private final List<StakeHolders> stakeHolders;
 
-        public HomeView(List<StakeHolders> stakeHolders){
-            super("home.ftl");
+    public MakePlanView(List<StakeHolders> stakeHolders){
+        super("plan.ftl");
 
-            this.stakeHolders = stakeHolders;
-        }
-
-       public List<StakeHolders> getStakeHolders(){
-
-           return stakeHolders;
-       }
+        this.stakeHolders = stakeHolders;
     }
 
+    public List<StakeHolders> getStakeHolders(){
+
+        return stakeHolders;
+    }
+}
 
 
 

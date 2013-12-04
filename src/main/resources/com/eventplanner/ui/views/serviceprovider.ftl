@@ -53,25 +53,31 @@
 
     $.ajax({
       type: "POST",
-      url: "/signup/customer",
+      url: "/stakeholders",
       data: jsondata,
       dataType: 'json',
       contentType:'application/json',
-      success : function(response, status){
-       console.log(response);
-       alert(response);
-       alert(status);
+      
+  }).done(function(data) {
+             //alert(data);
+             $('#response').html("<h1>Congratz! You are signed up</h1><button href='/plan'>Make Plan</button>");
+            
+  
+             console.log("success");
+             console.log(data.msg);
+           })
+           .fail(function(data) {
+             alert(data);
+             console.log("error");
+           })
+           .always(function() {
+             console.log("complete");
+           });
 
-     },
-     error:function(){
-      alert("something went wrong");
-    }
+
   });
 
-
-  });
-
-  });
+});
 
 
   hello.init({
@@ -180,46 +186,52 @@
        </ul>
      </div><!--/.nav-collapse -->
    </div>
-  </div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
+ </div>
+</div>
+<br>
+<br>
+<br>
+<br>
 
 
-  <div class="container well" >
-    <form class="form-horizontal" id="form1" role="form" method="POST" action="signup/customer">
-      <div class="form-group">
-        <label for="inputName" class="col-lg-2 control-label">Name</label>
-        <div class="col-lg-4">
-          <input type="text" class="form-control" id="inputName" name="user[name]" placeholder="text">
-          <span><div class="container" id="profile"></div></span>
-
-        </div>
-      </div>
-
-      <div class="form-group">
-       <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
-       <div class="col-lg-4">
-        <input type="email" class="form-control" id="inputEmail1" name="user[email]" placeholder="Email">
-        </div>
-    </div>
+<div class="container well" >
+  <form class="form-horizontal" id="form1" role="form" method="POST" action="signup/customer">
     <div class="form-group">
-     <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
-     <div class="col-lg-2">
-      <input type="password" class="form-control" id="inputPassword1" name="user[password]" placeholder="Password">
+      <label for="inputName" class="col-lg-2 control-label">Name</label>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" id="inputName" name="user[name]" placeholder="text">
+        <span><div class="container" id="profile"></div></span>
+
+      </div>
+    </div>
+
+    <div class="form-group">
+     <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+     <div class="col-lg-4">
+      <input type="email" class="form-control" id="inputEmail1" name="user[email]" placeholder="Email">
     </div>
   </div>
   <div class="form-group">
-   <label for="inputPhone" class="col-lg-2 control-label">Phone</label>
+   <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
    <div class="col-lg-2">
+    <input type="password" class="form-control" id="inputPassword1" name="user[password]" placeholder="Password">
+  </div>
+</div>
+<div class="form-group">
+  <label for="inputPhone" class="col-lg-2 control-label">Phone</label>
+  <div class="col-lg-2">
     <input type="text" class="form-control" id="inputPhone" name="user[phone]" placeholder="Phone">
   </div> (optional)
+</div>
+<div class="form-group">
+  <label for="inputDesc" class="col-lg-2 control-label">Description</label>
+  <div class="col-lg-2">
+    <textarea class="form-control" id="inputDesc" form="form1" name="description" placeholder="What you do?"></textarea>
   </div>
-   <fieldset class="col-lg-4"> 
-   <legend><h4>Check the services you want to provide!</h4></legend>
-   <div class="form-group">
+</div>
+<fieldset class="col-lg-4"> 
+  <legend><h4>Check the services you want to provide!</h4></legend>
+  <div class="form-group">
     <div class="col-lg-4">
       <div class="checkbox">
         <label>
@@ -232,48 +244,58 @@
     <div class="col-lg-4">
       <div class="checkbox">
         <label>
-          <input name="category[]" type="checkbox" value="dj" id="dj"> DJ
+          <input name="category[]" type="checkbox" value="dj" id="dj"> Music
         </label>
       </div>
     </div>
   </div>
-  </fieldset>
-
-
-
-
-
-
-  </div>
   <div class="form-group">
-   <div class="col-lg-offset-2 col-lg-2">
+    <div class="col-lg-4">
+      <div class="checkbox">
+        <label>
+          <input name="category[]" type="checkbox" value="venue" id="venue"> Venue
+        </label>
+      </div>
+    </div>
+  </div>
+</fieldset>
+
+
+
+
+
+
+</div>
+<div class="form-group">
+  <div class="col-lg-offset-2 col-lg-2">
     <input type="submit" class="btn btn-primary" id="signup" value="Sign Up!">
   </div>
-  </div>
-  </form>
+</div>
+</form>
+<br>
+
+<div class="container-well">
+  <button class= "btn btn-primary btn-lg" onclick="hello( 'facebook' ).login()">Sign in with Facebook</button>
+
+</div>
+<br>
+<div class="container-well">
+  <button class= "btn btn-primary btn-lg" onclick="hello( 'google' ).login()">Sign in with Google</button>
+
+</div>
+<div id="response">
 
 
-  <div class="container-well">
-    <button class= "btn btn-primary btn-lg" onclick="hello( 'facebook' ).login()">Sign in with Facebook</button>
-
-  </div>
-
-  <div class="container-well">
-    <button class= "btn btn-primary btn-lg" onclick="hello( 'google' ).login()">Sign in with Google</button>
-
-  </div>
-
-
-  </div>
-
-
-
-
+</div>
 
 
 
 
 
 
-  </body>
-  </html>
+
+
+
+
+</body>
+</html>

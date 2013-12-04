@@ -25,7 +25,7 @@ public class LoginResource {
 			//StakeHolders.getStakeHolders();
 			
 			
-			return Response.status(200).entity("CustomerCreated").build();
+			return Response.status(200).entity("{msg : CustomerCreated}").build();
 		}
 		catch(Exception ex)
 		{
@@ -45,8 +45,8 @@ public class LoginResource {
 	@Timed(name = "create-stakeholders")
     public Response saveStakeHolders(@Valid StakeHolders stakeHolderToCreate) {
 		try{
-
-			return Response.status(200).entity("StakeHolderCreated").build();
+             String msg="{\"msg\":\"StakeHolder Created\"}";
+			return Response.status(201).entity(msg).build();
 		}
 		catch(Exception ex)
 		{
@@ -67,7 +67,11 @@ public class LoginResource {
     public Response saveUser(@Valid Users userToCreate) {
 		try{
 			userToCreate.saveUser();
-			return Response.status(201).entity("CustomerCreated").build();
+            String msg = "{\"msg\":\"Customer Created\"}";
+            System.out.println((Response.status(201).entity(msg).build().getEntity()));
+
+
+			return Response.status(201).entity(msg).build();
 		}
 		catch(Exception ex)
 		{

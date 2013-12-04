@@ -1,7 +1,7 @@
 package com.eventplanner.ui.resources;
 
 import com.eventplanner.domain.StakeHolders;
-import com.eventplanner.ui.views.HomeView;
+import com.eventplanner.ui.views.MakePlanView;
 import com.google.common.collect.Lists;
 
 import javax.ws.rs.GET;
@@ -19,23 +19,23 @@ import java.util.List;
  * Time: 4:36 PM
  * To change this template use File | Settings | File Templates.
  */
-@Path("/home")
+@Path("/plan/build")
 @Produces(MediaType.TEXT_HTML)
-public class HomeResource {
+public class MakePlanResource {
 
     private StakeHolders stakeHolders = new StakeHolders();
 
-    public HomeResource() {
+    public MakePlanResource() {
 
     }
 
     @GET
-       public HomeView getHome() {
+    public MakePlanView getPlanView() {
 
-          List<StakeHolders> stakeHoldersList = Lists.newArrayList(stakeHolders.getStakeHolders());
-           return new HomeView(stakeHoldersList);
+        List<StakeHolders> stakeHoldersList = Lists.newArrayList(stakeHolders.getStakeHolders());
+        return new MakePlanView(stakeHoldersList);
 
-   }
+    }
 
 
 

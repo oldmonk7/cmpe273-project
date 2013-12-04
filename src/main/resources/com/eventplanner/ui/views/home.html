@@ -10,6 +10,7 @@
 
   <title>Plan my Event</title>
 
+  <!-- Latest compiled and minified CSS -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
   <!-- Optional theme -->
@@ -72,14 +73,13 @@
       <br>
       <br>
       <div class="jumbotron">
-        <div class="container">
-          <h1>Plan your Event</h1>
+
+        <h1>Plan your Event</h1>
 
 
-        </div>
 
       </div>
-      <div class="row">
+      <div>
         <form class="navbar-form pull-right">
           <div class="input-group">
             <input type="search" class="form-control" placeholder="Search"/>
@@ -89,9 +89,12 @@
           </div>
         </form>
       </div>
+     <br>
+     <br>
+     <div class="clearfix"></div>
+    
 
-      
-        <div class="row" >
+     <div class="row" >
       <div class="col-md-4 col-md-offset-2"> 
        
          <form action="/customer">
@@ -108,60 +111,27 @@
        </div>
 
      </div><!-- Row -->
-     <div class="row">
-              <div class="col-lg-4">
-                <h2>Food</h2>
-                <div class="list-group">
-                  <#list stakeHolders as sp>
-                   <#list sp.category as cat>
-                    <#if cat == "food">
-                    <a href="#" class="list-group-item">${sp.user.name}</a>
-                    </#if>
-                   </#list>
-                  </#list>
-                </div>
-
-              </div>
-              <div class="col-lg-4">
-                <h2>Music</h2>
-                 <div class="list-group">
-                  <#list stakeHolders as sp>
-                   <#list sp.category as cat>
-                    <#if cat == "dj">
-                    <a href="#" class="list-group-item">${sp.user.name}</a>
-                    </#if>
-                   </#list>
-                  </#list>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <h2>Venues</h2>
-                 <div class="list-group">
-                  <#list stakeHolders as sp>
-                   <#list sp.category as cat>
-                    <#if cat == "venue">
-                    <a href="#" class="list-group-item">${sp.user.name}</a>
-                    </#if>
-                   </#list>
-                  </#list>
-                </div>
-              </div>
-            </div>
-     
 
 
 
-        </div><!-- /.container -->
 
 
-        <!-- script tags -->
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="//code.jquery.com/jquery.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-        
-      </body>
-      </html>
+
+
+
+
+</div><!-- /.container -->
+
+
+
+<!-- script tags -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<!-- Latest compiled and minified JavaScript -->
+<!--  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+
+</body>
+</html>
 
 
 

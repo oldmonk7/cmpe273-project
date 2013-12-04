@@ -15,13 +15,14 @@
 
  
 
-  $(document).ready(function(){
+ $(document).ready(function(){
 
-    $('#form1').on('submit', function(event){
-        
 
-        event.preventDefault();
-        alert("Inside submit method");
+  $('#form1').on('submit', function(event){
+
+
+    event.preventDefault();
+    alert("Inside submit method");
 
         //var form = $('#form1');
         //var json = ConvertFormToJSON(form);
@@ -30,46 +31,78 @@
         var o = {};
 
         $.each(array, function() {
-        if (o[this.name] !== undefined) {
+          if (o[this.name] !== undefined) {
             if (!o[this.name].push) {
-                o[this.name] = [o[this.name]];
+              o[this.name] = [o[this.name]];
             }
             o[this.name].push(this.value || '');
-        } else {
+          } else {
             o[this.name] = this.value || '';
-        }
-    });
+          }
+        });
 
         /*jQuery.each(array, function() {
 
           json[array.name] = array.value || '';
           console.log(array.name);
         });*/
-        console.log(o);
-        var jsondata = JSON.stringify(o);
-        console.log(jsondata);
+  
+  console.log(o);
+  var jsondata = JSON.stringify(o);
+  console.log(jsondata);
 
-        $.ajax({
-            type: "POST",
-            url: "/signup/customer",
-            data: jsondata,
-            //dataType: '',
-            contentType:'application/json',
-            success : function(response, status){
-             console.log(response);
-             alert(response);
-             alert(status);
+       /* $.ajax({
+          type: "POST",
+          url: "/signup/customer",
+          data: jsondata,
+          async : false;
+          dataType: 'json',
 
-            },
-            error:function(){
-              alert("something went wrong");
-            }
-        });
+          contentType:'application/json',
+          success : function(data){
 
-      
-  });
+                   console.log(data.msg);
+                   alert(data);
+                   //alert(textStatus);
 
-  });
+                 },
+          error:function(data){
+                  alert("something went wrong");
+                  alert("5675867");
+                  console.log(data);
+                  alert(data);
+                }
+              }); */
+
+           $.ajax({
+             url: '/signup/customer',
+             async:'false',
+             type: 'POST',
+             dataType: 'json',
+             data: jsondata,
+             contentType : 'application/json'
+           })
+           .done(function(data) {
+             //alert(data);
+             $('#response').html("<h1>Congratz! You are signed up</h1>");
+            
+  
+             console.log("success");
+             console.log(data.msg);
+           })
+           .fail(function(data) {
+             alert(data);
+             console.log("error");
+           })
+           .always(function() {
+             console.log("complete");
+           });
+           
+
+
+});
+
+});
 
 
 hello.init({
@@ -172,12 +205,12 @@ hello.on('auth.login', function(auth){
            <b class="caret"></b>
          </a>
          <div class="dropdown-menu">
-           
-       </div>
-     </li>
-   </ul>
- </div><!--/.nav-collapse -->
-</div>
+
+         </div>
+       </li>
+     </ul>
+   </div><!--/.nav-collapse -->
+ </div>
 </div>
 </div>
 <br>
@@ -188,26 +221,26 @@ hello.on('auth.login', function(auth){
 
 <div class="container well" >
   <form class="form-horizontal" id="form1" role="form" method="POST" action="signup/customer">
-  <div class="form-group">
-    <label for="inputName" class="col-lg-2 control-label">Name</label>
-    <div class="col-lg-4">
-      <input type="text" class="form-control" id="inputName" name="name" placeholder="text">
-      <span><div class="container" id="profile"></div></span>
+    <div class="form-group">
+      <label for="inputName" class="col-lg-2 control-label">Name</label>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" id="inputName" name="name" placeholder="text">
+        <span><div class="container" id="profile"></div></span>
 
+      </div>
+    </div>
+
+    <div class="form-group">
+     <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+     <div class="col-lg-4">
+      <input type="email" class="form-control" id="inputEmail1" name="email" placeholder="Email">
     </div>
   </div>
-
   <div class="form-group">
-   <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
-   <div class="col-lg-4">
-    <input type="email" class="form-control" id="inputEmail1" name="email" placeholder="Email">
+   <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
+   <div class="col-lg-2">
+    <input type="password" class="form-control" id="inputPassword1" name="password" placeholder="Password">
   </div>
-</div>
-<div class="form-group">
- <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
- <div class="col-lg-2">
-  <input type="password" class="form-control" id="inputPassword1" name="password" placeholder="Password">
-</div>
 </div>
 <div class="form-group">
  <label for="inputPhone" class="col-lg-2 control-label">Phone</label>
@@ -231,6 +264,9 @@ hello.on('auth.login', function(auth){
 <div class="container">
   <button class= "btn btn-primary btn-lg" onclick="hello( 'google' ).login()">Sign in with Google</button>
 
+</div>
+<div id="response">
+   
 </div>
 
 

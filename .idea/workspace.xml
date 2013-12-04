@@ -2,23 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b45984a-6853-4788-96ed-d0db96b97734" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/StakeHolderResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/StakeHolderResourcetest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/HomeResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/HomeResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/HomeView.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/HomeView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/PlanResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/PlanResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/StakeHolderResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/StakeHolderResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/StakeHolderView.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/StakeHolderView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/UserResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/UserResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/app.log" afterPath="$PROJECT_DIR$/logs/app.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/customer.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/customer.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/home.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/home.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/serviceprovider.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/serviceprovider.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eventplanner.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384370866302" ignored="false" />
+    <file path="/Dummy.txt" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386114462614" ignored="false" />
     <file path="/fragment.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384125010347" ignored="false" />
-    <file path="/HomeView.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384130433541" ignored="false" />
+    <file path="/HomeView.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386057252060" ignored="false" />
     <file path="/LoginView.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384123292772" ignored="false" />
-    <file path="/LoginResource.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384123448986" ignored="false" />
+    <file path="/LoginResource.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1385969529927" ignored="false" />
     <file path="$PROJECT_DIR$/../cmpe273-lab4-oauth2/library/src/main/java/edu/sjsu/cmpe/library/api/resources/Oauth2.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384124892785" ignored="false" />
-    <file path="/EventPlanningService.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384412648617" ignored="false" />
+    <file path="/EventPlanningService.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386015008279" ignored="false" />
     <file path="/SignUpResource.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384127244881" ignored="false" />
-    <file path="/HomeResource.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384130373121" ignored="false" />
+    <file path="/HomeResource.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1385937817047" ignored="false" />
     <file path="/home.ftl" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384147942801" ignored="false" />
     <file path="/CustomerView.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384141446755" ignored="false" />
     <file path="/CustomerResource.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384141674275" ignored="false" />
@@ -26,6 +35,11 @@
     <file path="$PROJECT_DIR$/../../BlogMongo/hw4-3/src/main/java/course/BlogController.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384306449111" ignored="false" />
     <file path="/ServiceProviderView.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384412252091" ignored="false" />
     <file path="/ServiceProviderResource.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384412590707" ignored="false" />
+    <file path="/StakeHolderView.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1385842074738" ignored="false" />
+    <file path="/UserResource.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1385941204888" ignored="false" />
+    <file path="/MakePlanResource.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386014176205" ignored="false" />
+    <file path="/MakePlanView.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386013947764" ignored="false" />
+    <file path="/PlanResource.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386057938732" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +91,68 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/HomeResource.java" line="21" class="com.eventplanner.ui.resources.HomeResource" package="com.eventplanner.ui.resources">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/HomeResource.java" line="35" class="com.eventplanner.ui.resources.HomeResource" package="com.eventplanner.ui.resources">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/eventplanner/domain/StakeHolders.java" line="87" class="com.eventplanner.domain.StakeHolders" package="com.eventplanner.domain">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java" line="70" class="com.eventplanner.api.resources.LoginResource" package="com.eventplanner.api.resources">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -88,64 +164,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/index.ftl">
+      <file leaf-file-name="HomeResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/HomeResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="35" column="47" selection-start="881" selection-end="881" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/home.ftl">
+      <file leaf-file-name="StakeHolders.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/domain/StakeHolders.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="21" column="14" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/LoginView.java">
+      <file leaf-file-name="MakePlanResource.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/MakePlanResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+            <state line="35" column="31" selection-start="874" selection-end="886" vertical-scroll-proportion="0.4974227">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serviceprovider.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/serviceprovider.ftl">
+      <file leaf-file-name="EventPlanningService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="8" selection-start="7051" selection-end="7051" vertical-scroll-proportion="0.0">
+            <state line="36" column="108" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerResource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/CustomerResource.java">
+      <file leaf-file-name="LoginResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
+            <state line="48" column="71" selection-start="1067" selection-end="1166" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceProviderView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/ServiceProviderView.java">
+      <file leaf-file-name="RootResources.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/RootResources.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+            <state line="20" column="13" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceProviderResource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/ServiceProviderResource.java">
+      <file leaf-file-name="StakeHolderResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/StakeHolderResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="29" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
+            <state line="22" column="60" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MakePlanView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/MakePlanView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="61" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlanResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/PlanResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="64" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,28 +247,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventPlanningService.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java">
+      <file leaf-file-name="HomeView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/HomeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="61" selection-start="2248" selection-end="2248" vertical-scroll-proportion="0.76804125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeResource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/HomeResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customer.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/customer.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="236" column="39" selection-start="6562" selection-end="6562" vertical-scroll-proportion="0.0">
+            <state line="22" column="24" selection-start="425" selection-end="456" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -198,22 +274,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/LoginView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/LoginResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/StakeHolderResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/SignUpResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/HomeView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/HomeResource.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/customer.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/CustomerView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/CustomerResource.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/customer.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/home.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/serviceprovider.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/ServiceProviderView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/ServiceProviderResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/StakeHolderView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/StakeHolderResourcetest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/home.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/UserResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/StakeHolderResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/MakePlanView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/MakePlanResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/HomeResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/HomeView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/PlanResource.java" />
       </list>
     </option>
   </component>
@@ -255,6 +331,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -579,27 +656,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="freemarker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventplanner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cmpe273-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -609,16 +671,16 @@
     <property name="options.lastSelected" value="Errors" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cmpe273-assignment2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cmpe273-lab4/library" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -639,7 +701,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="eventplanner" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -655,19 +723,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -695,6 +750,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -771,18 +839,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -861,116 +929,116 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/config/EventPlanningServiceConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/UserResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+        <state line="12" column="36" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/StakeHolderResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/StakeHolderResourcetest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="24" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/StakeHolderResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/CustomerView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="11" selection-start="280" selection-end="341" vertical-scroll-proportion="0.0">
+        <state line="13" column="13" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/StakeHolderView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="212" selection-end="252" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/HomeView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/dto/DataAccess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="12" selection-start="288" selection-end="348" vertical-scroll-proportion="0.0">
+        <state line="88" column="111" selection-start="2266" selection-end="2266" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/index.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/domain/Users.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="15" column="13" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/LoginView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/domain/Plan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+        <state line="62" column="41" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/home.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/domain/StakeHolders.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="21" column="14" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/customer.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="236" column="39" selection-start="6562" selection-end="6562" vertical-scroll-proportion="0.0">
+        <state line="36" column="108" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/serviceprovider.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/MakePlanView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="8" selection-start="7051" selection-end="7051" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/ServiceProviderView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+        <state line="29" column="61" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/HomeResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
+        <state line="35" column="47" selection-start="881" selection-end="881" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/CustomerResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/HomeView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
+        <state line="22" column="24" selection-start="425" selection-end="456" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/ServiceProviderResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="29" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
+        <state line="48" column="71" selection-start="1067" selection-end="1166" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/RootResources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="13" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/StakeHolderResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="60" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/PlanResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="64" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/MakePlanResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="61" selection-start="2248" selection-end="2248" vertical-scroll-proportion="0.76804125">
+        <state line="35" column="31" selection-start="874" selection-end="886" vertical-scroll-proportion="0.4974227">
           <folding />
         </state>
       </provider>

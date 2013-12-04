@@ -11,16 +11,11 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/test")
 @Produces(MediaType.TEXT_HTML)
-public class StakeHolderResource {
+public class StakeHolderResourcetest {
 
-	//private  StakeHolders stakeholder;
 
 	
-	 public StakeHolderResource() {
-			
-		    }
-	
-//    public StakeHolderResource(StakeHolders stakeholder) {
+//    public StakeHolderResourcetest(StakeHolders stakeholder) {
 //	this.stakeholder = stakeholder;
 //    }
 
