@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b45984a-6853-4788-96ed-d0db96b97734" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/common/SendMail.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/dto/DataAccess.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/dto/DataAccess.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/domain/Plan.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/domain/Plan.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/StakeHolderResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/StakeHolderResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/domain/StakeHolders.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/domain/StakeHolders.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/UserResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/UserResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/domain/Users.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/domain/Users.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/app.log" afterPath="$PROJECT_DIR$/logs/app.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/event.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/event.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/home.html" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/config/dbConfig.properties" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/config/dbConfig.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventplanner.iml" afterPath="$PROJECT_DIR$/eventplanner.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eventplanner.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -130,7 +142,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java" line="70" class="com.eventplanner.api.resources.LoginResource" package="com.eventplanner.api.resources">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java" line="74" class="com.eventplanner.api.resources.LoginResource" package="com.eventplanner.api.resources">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -198,7 +210,7 @@
       <file leaf-file-name="LoginResource.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="27" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0">
+            <state line="33" column="27" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -207,7 +219,7 @@
       <file leaf-file-name="StakeHolderResource.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/StakeHolderResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="60" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+            <state line="28" column="60" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -988,14 +1000,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="27" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0">
+        <state line="33" column="27" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/StakeHolderResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="60" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+        <state line="28" column="60" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

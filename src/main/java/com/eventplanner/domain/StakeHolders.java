@@ -15,16 +15,18 @@ public class StakeHolders extends LinksDto{
 	//private static int stakeholderKey = 0;
 	public StakeHolders()
 	{
-	  // this.id = ++stakeholderKey;
+		// this.id = ++stakeholderKey;
 	}
-	
+
 	private List<String> category;
 	private Users user;
 	private String description;
 	@Id @ObjectId 
-    private String key;
-	
-	
+	private String key;
+
+	private String token;
+
+
 	public Users getUser() {
 		return user;
 	}
@@ -39,11 +41,11 @@ public class StakeHolders extends LinksDto{
 	public void setCategory(List<String> category) {
 		this.category = category;
 	}
-	
+
 	public void addCategory(String category) {
 		this.category.add(category);
 	}
-	
+
 	public void removeCategory(String category) {
 		this.category.remove(category);
 	}
@@ -54,15 +56,15 @@ public class StakeHolders extends LinksDto{
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
+
 	public String getKey() {
 		return key;
 	}
 	public void setKey(String key) {
 		this.key = key;
 	}
-	
-	
+
+
 	public void saveStakeHolder()
 	{
 		DataAccess dao =null;
@@ -70,10 +72,10 @@ public class StakeHolders extends LinksDto{
 			dao = new DataAccess();
 			dao.saveData(DbConfig.collectionStakeHolders, this);
 		}
-		 catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		finally
 		{
 			if(dao!=null)
@@ -82,7 +84,7 @@ public class StakeHolders extends LinksDto{
 			}
 		}
 	}
-	
+
 	public  Iterable<StakeHolders> getStakeHolders()
 	{
 		DataAccess dao =null;
@@ -91,14 +93,14 @@ public class StakeHolders extends LinksDto{
 			dao = new DataAccess();
 			allStakeHolders = dao.getDataFromCollection(DbConfig.collectionStakeHolders).find().as(StakeHolders.class);
 			return  allStakeHolders;
-					
-					
+
+
 		}
-		 catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				return  allStakeHolders;
-			}
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return  allStakeHolders;
+		}
 		finally
 		{
 			if(dao!=null)
@@ -107,7 +109,7 @@ public class StakeHolders extends LinksDto{
 			}
 		}
 	}
-	
+
 	public Iterable<StakeHolders> findStakeHolders(String condition)
 	{
 		DataAccess dao =null;
@@ -117,10 +119,10 @@ public class StakeHolders extends LinksDto{
 			filteredStakeHolders =dao.findData(DbConfig.collectionStakeHolders,condition).as(StakeHolders.class);
 			return  filteredStakeHolders;
 		}
-		 catch (Exception e) {
-			 e.printStackTrace();
-			 return  filteredStakeHolders;	
-			}
+		catch (Exception e) {
+			e.printStackTrace();
+			return  filteredStakeHolders;	
+		}
 		finally
 		{
 			if(dao!=null)
@@ -133,7 +135,7 @@ public class StakeHolders extends LinksDto{
 			}
 		}
 	}
-	
+
 	public  StakeHolders findOneStakeHolder(String condition)
 	{
 		DataAccess dao =null;
@@ -143,10 +145,10 @@ public class StakeHolders extends LinksDto{
 			filteredStakeHolder =dao.findOneData(DbConfig.collectionStakeHolders,condition).as(StakeHolders.class);
 			return filteredStakeHolder;
 		}
-		 catch (Exception e) {
-			 e.printStackTrace();
-			 return filteredStakeHolder;	
-			}
+		catch (Exception e) {
+			e.printStackTrace();
+			return filteredStakeHolder;	
+		}
 		finally
 		{
 			if(dao!=null)
@@ -159,60 +161,121 @@ public class StakeHolders extends LinksDto{
 			}
 		}
 	}
-		
-		public  StakeHolders findOneStakeHolder()
-		{
-			DataAccess dao =null;
-			StakeHolders filteredStakeHolder = null;
-			try{
-				dao = new DataAccess();
-				filteredStakeHolder =dao.findOneData(DbConfig.collectionStakeHolders).as(StakeHolders.class);
-				return filteredStakeHolder;
-			}
-			 catch (Exception e) {
-				 e.printStackTrace();
-				 return filteredStakeHolder;	
-				}
-			finally
-			{
-				if(dao!=null)
-				{
-					dao =null;
-				}
-				if(filteredStakeHolder != null)
-				{
-					filteredStakeHolder = null;
-				}
-			}
-	}
-		
-		public  Iterable<StakeHolders>  findStakeHolersByCategory(String category)
-		{
-			try{
-				return findStakeHolders("{category : {$all: [\""+category+"\"]}}");
-				 
-			}
-			 catch (Exception e) {
-				 e.printStackTrace();
-				 return null;	
-				}
-			finally
-			{
-				
-			}
-	}
-		
-		public List<String> toList()
-		{
-			List<String> obj = new ArrayList<String>();
-			obj.add("ID : " + this.key);
-			obj.add("Name : " + this.user.getName());
-			obj.add("Phone : " + this.user.getPhone().longValue());
-			obj.add("Email : " + this.user.getEmail());
-			obj.add("Desc : " + this.description);
-			obj.add("Category: "+this.category);
-			
-			return obj;	
-		
+
+	public  StakeHolders findOneStakeHolder()
+	{
+		DataAccess dao =null;
+		StakeHolders filteredStakeHolder = null;
+		try{
+			dao = new DataAccess();
+			filteredStakeHolder =dao.findOneData(DbConfig.collectionStakeHolders).as(StakeHolders.class);
+			return filteredStakeHolder;
 		}
+		catch (Exception e) {
+			e.printStackTrace();
+			return filteredStakeHolder;	
+		}
+		finally
+		{
+			if(dao!=null)
+			{
+				dao =null;
+			}
+			if(filteredStakeHolder != null)
+			{
+				filteredStakeHolder = null;
+			}
+		}
+	}
+
+	public  Iterable<StakeHolders>  findStakeHolersByCategory(String category)
+	{
+		try{
+			return findStakeHolders("{category : {$all: [\""+category+"\"]}}");
+
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			return null;	
+		}
+		finally
+		{
+
+		}
+	}
+
+	public List<String> toList()
+	{
+		List<String> obj = new ArrayList<String>();
+		obj.add("ID : " + this.key);
+		obj.add("Name : " + this.user.getName());
+		obj.add("Phone : " + this.user.getPhone().longValue());
+		obj.add("Email : " + this.user.getEmail());
+		obj.add("Desc : " + this.description);
+		obj.add("Category: "+this.category);
+
+		return obj;	
+
+	}
+	
+	public List<String> toResponseList()
+	{
+		List<String> obj = new ArrayList<String>();
+		obj.add("Name : " + this.user.getName());
+		obj.add("Auth-Token: "+this.user.getToken());
+
+		return obj;	
+
+	}
+
+	//		public void setToken(String token) {
+	//			this.token = token;
+	//		}
+	//		public void addUserToken() {
+	//			
+	//			try{
+	//					DataAccess.addUserToken(this.user);
+	//			   }
+	//			 catch (Exception e) {
+	//					e.printStackTrace();
+	//				}
+	//			finally
+	//			{
+	//				
+	//			}
+	//		}
+	//			public void deleteUserToken(String token) {
+	//					
+	//					try{
+	//							DataAccess.deleteUserToken(token);;
+	//					   }
+	//					 catch (Exception e) {
+	//							e.printStackTrace();
+	//						}
+	//					finally
+	//					{
+	//						
+	//					}
+	//				}
+	//			public boolean isUserTokenValid(String token) {
+	//					
+	//					try{
+	//						 Users authUser =DataAccess.getUserByToken(token);
+	//						 if(null!= authUser)
+	//						 {
+	//							 
+	//							 return true;
+	//						 }
+	//						 return false;
+	//					   }
+	//					 catch (Exception e) {
+	//						 	e.printStackTrace();
+	//						 	return false;
+	//						}
+	//					finally
+	//					{
+	//						
+	//					}
+	//				}
+
 }

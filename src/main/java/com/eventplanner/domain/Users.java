@@ -18,6 +18,7 @@ public class Users extends LinksDto {
 	//private static int userkey = 0;
 	public Users()
 	{
+		//addUserToken() ;
 		//this.id = ++userkey;
 	}
 	
@@ -32,6 +33,9 @@ public class Users extends LinksDto {
     private String key;
 	@NotEmpty(message ="Password cannot be blank.")
 	private String password;
+	
+	private String token;
+	private String type;
 
 	
 	public String getKey() {
@@ -99,6 +103,7 @@ public class Users extends LinksDto {
 		try{
 			dao = new DataAccess();
 			users = dao.find(DbConfig.collectionUsers).as(Users.class);
+			
 			return users;
 		}
 		 catch (Exception e) {
@@ -115,18 +120,18 @@ public class Users extends LinksDto {
 		}
 	}
 	
-	public List<Users> findUsers(String condition)
+	public Iterable<Users> findUsers(String condition)
 	{
 		DataAccess dao =null;
 		Iterable<Users> filteredUsers = null;
 		try{
 			dao = new DataAccess();
 			filteredUsers =dao.findData(DbConfig.collectionUsers,condition).as(Users.class);
-			return (List<Users>) filteredUsers;
+			return  filteredUsers;
 		}
 		 catch (Exception e) {
 			 e.printStackTrace();
-			 return (List<Users>) filteredUsers;	
+			 return  filteredUsers;	
 			}
 		finally
 		{
@@ -169,7 +174,13 @@ public class Users extends LinksDto {
 	
 	public Users findUserByName(String name)
 	{
-		return findUser("{name : \""+name.toLowerCase()+"\" }");
+		return findUser("{name:\""+name.toLowerCase()+"\"}");
+	
+	}
+	
+	public Users findUserByEmail(String email)
+	{
+		return findUser("{email:\""+email+"\"}");
 	
 	}
 	
@@ -180,8 +191,89 @@ public class Users extends LinksDto {
 		obj.add("Name : " + this.name);
 		obj.add("Phone : " + this.phone.longValue());
 		obj.add("Email : " + this.email);
+		obj.add("Token : " + this.token);
 		return obj;	
 	
 	}
+	
+	public List<String> toResponseList()
+	{
+		List<String> obj = new ArrayList<String>();
+		obj.add("Name : " + this.name);
+		obj.add("Auth-Token: "+this.token);
+
+		return obj;	
+
+	}
+	
+	/**
+	 * @return the token
+	 */
+	public String getToken() {
+		return token;
+	}
+	/**
+	 * @param token the token to set
+	 */
+	public void setToken(String token) {
+		this.token = token;
+	}
+	public void addUserToken() {
+		
+		try{
+				DataAccess.addUserToken(this);
+		   }
+		 catch (Exception e) {
+				e.printStackTrace();
+			}
+		finally
+		{
+			
+		}
+	}
+		public void deleteUserToken(String token) {
+				
+				try{
+						DataAccess.deleteUserToken(token);;
+				   }
+				 catch (Exception e) {
+						e.printStackTrace();
+					}
+				finally
+				{
+					
+				}
+			}
+		public boolean isUserTokenValid(String token) {
+				
+				try{
+					 Users authUser =	DataAccess.getUserByToken(token);
+					 if(null!= authUser)
+					 {
+						 return true;
+					 }
+					 return false;
+				   }
+				 catch (Exception e) {
+					 	e.printStackTrace();
+					 	return false;
+					}
+				finally
+				{
+					
+				}
+			}
+		/**
+		 * @return the type
+		 */
+		public String getType() {
+			return type;
+		}
+		/**
+		 * @param type the type to set
+		 */
+		public void setType(String type) {
+			this.type = type;
+		}
 
 }

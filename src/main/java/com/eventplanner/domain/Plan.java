@@ -22,7 +22,7 @@ public class Plan extends LinksDto {
     private String key;
 	private int number;
 	private Users user;
-	private List<StakeHolders> stakeHolders;
+	private List<String> stakeHolders;
 	
 	public String getKey() {
 		return key;
@@ -39,15 +39,15 @@ public class Plan extends LinksDto {
 		this.user = user;
 	}
 
-	public List<StakeHolders> getStakeHolders() {
+	public List<String> getStakeHolders() {
 		return stakeHolders;
 	}
 
-	public void setStakeHolders(List<StakeHolders> stakeHolders) {
+	public void setStakeHolders(List<String> stakeHolders) {
 		this.stakeHolders = stakeHolders;
 	}
 
-	public void addStakeHolders(StakeHolders stakeHolder) {
+	public void addStakeHolders(String stakeHolder) {
 		this.stakeHolders.add(stakeHolder);
 	}
 	
