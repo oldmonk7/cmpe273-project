@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="../assets/css/magnific-popup.css" media="all">
     <link rel="stylesheet" href="../assets/css/ut-responsive-grid.css" media="all">
     <link rel="stylesheet" href="../assets/css/style.css" media="all">
-    
+    <script src="../assets/js/jquery.min.js"></script>
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
   <!-- Optional theme -->
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
@@ -59,7 +59,7 @@
 
     <!-- Load jQuery
       ================================================== -->
-    <script src="../assets/js/jquery.min.js"></script>
+   
     <script src="../assets/js/modernizr.js"></script>
     <script src="../assets/js/device.min.js"></script>
 
@@ -125,6 +125,17 @@
                     <a href="#plan-event-section">Plan Event</a>
                     <a href="#team-section">Team</a>
                     <a href="#contact-section">Register</a>
+                    <a class="btn pull-right" data-toggle="modal" data-target="#login">Login</a>
+                   <!--<ul class="nav pull-right">
+                      
+                      <li class="divider-vertical"></li>
+                       <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+                       <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+               Login form here 
+                      </div>
+                        </li>
+                    </ul>-->
                 </nav>
             </div>
         </div><!-- close .ha-header-perspective -->
@@ -134,6 +145,25 @@
 <div class="clear"></div>
 
 <!-- slider section -->
+<div class="modal hide fade" id="login" role="dialog" aria-labelledby="loginlabel">  
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">   
+        <a href="#" class="btn btn-success pull-right" data-dismiss="modal">×</a>   
+        <h4>Welcome to technicalkeeda.com</h4>  
+    </div>  
+    <div class="modal-body">  
+        <form method="post" action='<?= base_url();?>/login' name="loginForm">   
+            <p><input type="text" class="span3" name="email" id="email" placeholder="Enter Email" value=""></p>  
+             <p><input type="password" class="span3" id="loginPassword" name="loginPassword" placeholder="Enter Password"></p>  
+              <p><button type="submit" class="btn btn-success">Sign in</button> 
+                <a href="<?= base_url();?>/forgotpassword">Forgot Password</a></p>  
+            </form>  
+        </div>                  
+    </div>
+</div>
+</div> 
+
 <section class="slider hero ha-waypoint" data-animate-up="ha-header-hide" data-animate-down="ha-header-hide">
     <div class="parallax-overlay parallax-overlay-1"></div>
 
@@ -387,7 +417,7 @@
 
     </div><!-- close grid-container -->
     <div class="container">
-            <div class="row">
+           
                 <div class="col-sm-2">
                   <h2>Venues</h2>
                   <div class="list-group">
