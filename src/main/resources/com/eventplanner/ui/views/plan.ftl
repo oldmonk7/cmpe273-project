@@ -32,7 +32,7 @@
            $(".list-group-item").click(function(event) {
             event.preventDefault();
             $(this).css("backgroundColor","green");
-            $('#sps').append('<h3><input name="spname[]" type="checkbox" href="#" value="'+$(this).html()+'" checked>' + " " + $(this).html()+"</h3>");
+            $('#sps').append('<h3><input name="category[]" type="checkbox" href="#" value="'+$(this).html()+'" checked>' + " " + $(this).html()+"</h3>");
             $('#planbutton').html('<input type="submit" class="btn btn-primary" id="makeplan" value="Build Plan!">')
             //$('#plan').append($(this).html());
             //$('#plan').append('</a>');
