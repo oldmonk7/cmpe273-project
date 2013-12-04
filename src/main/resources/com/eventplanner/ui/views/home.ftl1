@@ -168,6 +168,7 @@
               <input type="password" id="loginPassword" placeholder="Password" class="form-control">
             </div>
             <button type="submit" class="btn btn-success">Sign in</button>
+            <button type="submit" id="btnLogout" class="btn btn-success">Logout</button>
           </form>
         </li>
         <li>

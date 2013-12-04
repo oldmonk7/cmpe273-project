@@ -1,6 +1,19 @@
 package com.eventplanner.api.resources;
 
+
+import javax.validation.Valid;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import com.eventplanner.common.SendMail;
 import com.eventplanner.domain.Plan;
+import com.eventplanner.domain.Users;
 import com.google.common.collect.Lists;
 import com.yammer.metrics.annotation.Timed;
 
@@ -19,6 +32,31 @@ public class PlanResource {
     public Response saveUser(@Valid Plan planToCreate) {
 		try{
 			planToCreate.savePlan();
+			
+			//notifying customers
+			Users userObj = new Users().findUserByName(planToCreate.getUser());
+			String subjectUser = "Service providers Notified!";
+			String bodyUser = "Hi "+planToCreate.getUser()+","+
+					"\n \n All the Service providers you have selected are notified."+
+					"\n They will contact you soon.";
+				new SendMail( userObj.getEmail(), subjectUser , bodyUser);
+
+				
+			// notifying service providers
+				String subjectStackholders = "Event planner notification";
+			for(String stakeholders : planToCreate.getStakeHolders())
+			{
+				Users stakeholderObj = new Users().findUserByName(stakeholders);
+				 String bodyStackhoder = "Hi "+stakeholders+ ","+
+						 			"\n \n"+ planToCreate.getUser()+ "  is planning to use your service. \n \n"
+						 			+ "\n Here is your customer details : \n"
+						 			+"Customer name: "+planToCreate.getUser()
+						 			+"\n Email ID: "+userObj.getEmail()
+						 			+"\n Cell No.: "+userObj.getPhone();
+				 new SendMail(stakeholderObj.getEmail(),subjectStackholders,bodyStackhoder);
+						 			
+			}
+			
             String msg = "{\"msg\":\"Plan Created\"}";
 			return Response.status(201).entity(msg).build();
 		}

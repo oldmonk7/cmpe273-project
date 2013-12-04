@@ -25,35 +25,35 @@
 
 	<!-- CSS
   ================================================== -->
-  	<link rel="stylesheet" href="css/reset.css" media="all">
-    <link rel="stylesheet" href="css/ut-fontface.css" media="all">
-    <link rel="stylesheet" href="css/font-awesome.css" media="all">
-	<link rel="stylesheet" href="css/flexslider.css" media="all">
-    <link rel="stylesheet" href="css/magnific-popup.css" media="all">
-    <link rel="stylesheet" href="css/ut-responsive-grid.css" media="all">
-    <link rel="stylesheet" href="css/style.css" media="all">
+  	<link rel="stylesheet" href="../assets/css/reset.css" media="all">
+    <link rel="stylesheet" href="../assets/css/ut-fontface.css" media="all">
+    <link rel="stylesheet" href="../assets/css/font-awesome.css" media="all">
+	<link rel="stylesheet" href="../assets/css/flexslider.css" media="all">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css" media="all">
+    <link rel="stylesheet" href="../assets/css/ut-responsive-grid.css" media="all">
+    <link rel="stylesheet" href="../assets/css/style.css" media="all">
     
     
     <!--[if lt IE 9]>
-		<script src="js/html5.js"></script>
+		<script src="../assets/js/html5.js"></script>
 	<![endif]-->
     
     <!--[if lte IE 8]> 
-		<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+		<link rel="stylesheet" type="text/css" href="../assets/css/ie8.css" />
 	<![endif]-->
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<link rel="shortcut icon" href="../assets/images/favicon.ico">
+	<link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/apple-touch-icon-114x114.png">
 
 	<!-- Load jQuery
   	================================================== -->
-  	<script src="js/jquery.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/device.min.js"></script>
+  	<script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/modernizr.js"></script>
+    <script src="../assets/js/device.min.js"></script>
     
   
 </head>
@@ -75,13 +75,14 @@
 						
                         </div>
 						<nav id="ut-navigation" class="grid-70 tablet-grid-80 mobile-grid-100">
-                        	<a  href="home.html">Home</a>
-							<a class="selected"  href="#main-content">About</a>
+                        	<a  href="/home">Home</a>
+							<a class="selected"  href="#">About</a>
 							
-							<a href="plan.html">Plan Event</a>
-                            <a href="myplan.html">My Plan</a>
-                            <a href="team.html">Team</a>
-                            <a href="register.html">Register</a>
+							<a href="/plan/build">Plan Event</a>
+                            <a href="/myplan">My Plan</a>
+                            <a href="/team">Team</a>
+                            <a href="/register">Register</a>
+                             <a href="/login">Log In</a>
 						</nav>
 					</div>
 				</div><!-- close .ha-header-perspective --> 
@@ -106,7 +107,7 @@
         <!-- close section header -->
 
         <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box">
-            <figure class="about-icon"><img src="../assets/images/app-development.png" alt="app-development"></figure>
+            <figure class="about-icon"><img src="../assets/../assets/images/app-development.png" alt="app-development"></figure>
 
             <div class="about-box">
                 <h3>Marriage</h3>
@@ -115,7 +116,7 @@
         </div>
 
         <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box">
-            <figure class="about-icon"><img src="../assets/images/ui-design.png" alt="ui-design"></figure>
+            <figure class="about-icon"><img src="../assets/../assets/images/ui-design.png" alt="ui-design"></figure>
 
             <div class="about-box">
                 <h3>Sporting Events</h3>
@@ -124,7 +125,7 @@
         </div>
 
         <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box">
-            <figure class="about-icon"><img src="../assets/images/brand-identity.png" alt="brand-identity"></figure>
+            <figure class="about-icon"><img src="../assets/../assets/images/brand-identity.png" alt="brand-identity"></figure>
 
             <div class="about-box">
                 <h3>School Parties</h3>
@@ -133,7 +134,7 @@
         </div>
 
         <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box">
-            <figure class="about-icon"><img src="../assets/images/consultancy.png" alt="consultancy"></figure>
+            <figure class="about-icon"><img src="../assets/../assets/images/consultancy.png" alt="consultancy"></figure>
 
             <div class="about-box">
                 <h3>Concert</h3>
@@ -142,7 +143,7 @@
         </div>
 
         <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box">
-            <figure class="about-icon"><img src="../assets/images/consultancy.png" alt="consultancy"></figure>
+            <figure class="about-icon"><img src="../assets/../assets/images/consultancy.png" alt="consultancy"></figure>
 
             <div class="about-box">
                 <h3>Religious Functions</h3>
@@ -151,7 +152,7 @@
         </div>
 
         <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box">
-            <figure class="about-icon"><img src="../assets/images/consultancy.png" alt="consultancy"></figure>
+            <figure class="about-icon"><img src="../assets/../assets/images/consultancy.png" alt="consultancy"></figure>
 
             <div class="about-box">
                 <h3>Many Others</h3>
@@ -169,13 +170,13 @@
 	
     <!-- Load Javascript
   	================================================== -->
-    <script src="js/jquery.mb.YTPlayer.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/jquery.parallax.min.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
-	<script src="js/waypoints.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-   	<script src="js/jquery.custom.js"></script>
+    <script src="../assets/js/jquery.mb.YTPlayer.js"></script>
+    <script src="../assets/js/jquery.flexslider-min.js"></script>
+    <script src="../assets/js/jquery.parallax.min.js"></script>
+    <script src="../assets/js/jquery.scrollTo.min.js"></script>
+	<script src="../assets/js/waypoints.min.js"></script>
+	<script src="../assets/js/jquery.magnific-popup.min.js"></script>
+   	<script src="../assets/js/jquery.custom.js"></script>
     
 <!-- End Document
 ================================================== -->

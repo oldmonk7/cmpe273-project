@@ -148,7 +148,6 @@
 
 
     event.preventDefault();
-    alert("Inside submit method");
 
         //var form = $('#form1');
         //var json = ConvertFormToJSON(form);
@@ -191,7 +190,7 @@
              headers: { 'Email': loginEmail , 'Password' : loginPassword }
            })
            .done(function(data) {
-             alert(data);
+   
              
              authToken = data.auth;
              console.log("data.name"+ data.user);
@@ -218,7 +217,7 @@
              
            })
            .fail(function(data) {
-             alert(data);
+     
              console.log("error");
            })
            .always(function() {

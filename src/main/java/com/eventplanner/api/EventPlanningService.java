@@ -55,6 +55,7 @@ public class EventPlanningService extends Service<EventPlanningServiceConfigurat
         environment.addResource(AboutResource.class);
         environment.addResource(RegisterResource.class);
         environment.addResource(TeamResource.class);
+        environment.addResource(LoginViewResource.class);
 
 
 

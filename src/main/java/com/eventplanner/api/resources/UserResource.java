@@ -22,7 +22,7 @@ public class UserResource {
 			userToCreate.setType("customer");
 			userToCreate.addUserToken();
 			userToCreate.saveUser();
-			return Response.status(201).entity("User Created : \n"+ userToCreate.toResponseList()).build();
+			return Response.status(201).entity(userToCreate.toResponseList()).build();
 		}
 		catch(Exception ex)
 		{
