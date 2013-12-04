@@ -35,7 +35,7 @@
 
 
     <!-- DEMO Switcher
-    ================================================== -->
+  	================================================== -->
     <link rel="stylesheet" href="../styleswitcher/css/styleswitcher.css">
 
     <!--[if lt IE 9]>
@@ -48,22 +48,22 @@
 
     <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" href="../assets/images/favicon.ico">
-    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/apple-touch-icon-e-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/apple-touch-icon-e-114x114.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-e-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-e-114x114.png">
 
     <!-- Load jQuery
       ================================================== -->
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/modernizr.js"></script>
-    <script src="../assets/js/device.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/device.min.js"></script>
 
     <!--<script src="jquery-1.5.min.js"></script>-->
     <!--<script src="jquery-ui-1.8.9.custom.min.js"></script>-->
 
     <!-- DEMO Switcher
-    ================================================== -->
+  	================================================== -->
     <script src="../styleswitcher/js/styleswitcher.js"></script>
 
 </head>
@@ -147,11 +147,11 @@
     <!-- slider -->
     <div class="main-slider">
         <ul class="slides">
-            <li style="background:url(../assets/images/slider/slide-3.jpg);"></li>
-            <li style="background:url(../assets/images/slider/slide-4.jpg);"></li>
-            <li style="background:url(../assets/images/slider/slide-5.jpg);"></li>
-            <li style="background:url(../assets/images/slider/slide-6.jpg);"></li>
-            <li style="background:url(../assets/images/slider/slide-7.jpg);"></li>
+            <li style="background:url(images/slider/slide-3.jpg);"></li>
+            <li style="background:url(images/slider/slide-4.jpg);"></li>
+            <li style="background:url(images/slider/slide-5.jpg);"></li>
+            <li style="background:url(images/slider/slide-6.jpg);"></li>
+            <li style="background:url(images/slider/slide-7.jpg);"></li>
         </ul>
     </div>
     <!-- close slider -->
@@ -177,7 +177,7 @@
         <!-- close section header -->
 
         <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box">
-            <figure class="about-icon"><img src="../assets/images/app-development.png" alt="app-development"></figure>
+            <figure class="about-icon"><img src="images/app-development.png" alt="app-development"></figure>
 
             <div class="about-box">
                 <h3>Marriage</h3>
@@ -186,7 +186,7 @@
         </div>
 
         <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box">
-            <figure class="about-icon"><img src="../assets/images/ui-design.png" alt="ui-design"></figure>
+            <figure class="about-icon"><img src="images/ui-design.png" alt="ui-design"></figure>
 
             <div class="about-box">
                 <h3>Sporting Events</h3>
@@ -195,7 +195,7 @@
         </div>
 
         <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box">
-            <figure class="about-icon"><img src="../assets/images/brand-identity.png" alt="brand-identity"></figure>
+            <figure class="about-icon"><img src="images/brand-identity.png" alt="brand-identity"></figure>
 
             <div class="about-box">
                 <h3>School Parties</h3>
@@ -204,7 +204,7 @@
         </div>
 
         <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box">
-            <figure class="about-icon"><img src="../assets/images/consultancy.png" alt="consultancy"></figure>
+            <figure class="about-icon"><img src="images/consultancy.png" alt="consultancy"></figure>
 
             <div class="about-box">
                 <h3>Concert</h3>
@@ -213,7 +213,7 @@
         </div>
 
         <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box">
-            <figure class="about-icon"><img src="../assets/images/consultancy.png" alt="consultancy"></figure>
+            <figure class="about-icon"><img src="images/consultancy.png" alt="consultancy"></figure>
 
             <div class="about-box">
                 <h3>Religious Functions</h3>
@@ -222,7 +222,7 @@
         </div>
 
         <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box">
-            <figure class="about-icon"><img src="../assets/images/consultancy.png" alt="consultancy"></figure>
+            <figure class="about-icon"><img src="images/consultancy.png" alt="consultancy"></figure>
 
             <div class="about-box">
                 <h3>Many Others</h3>
@@ -341,9 +341,9 @@
 
         <!-- plan-event box 1 -->
         <div class="grid-33 mobile-grid-50 tablet-grid-50">
-            <a class="plan-event-popup" href="../assets/images/plan-event/large/p1.jpg">
+            <a class="plan-event-popup" href="images/plan-event/large/p1.jpg">
                 <div class="plan-event-box">
-                    <figure class="plan-event-image"><img src="../assets/images/plan-event/thumb/p1.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
+                    <figure class="plan-event-image"><img src="images/plan-event/thumb/p1.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
                     <div class="plan-event-caption">
                         <h3 class="plan-event-title">Camera<span class="plan-event-category">Photography</span></h3>
                     </div><!-- close plan-event caption -->
@@ -353,9 +353,9 @@
 
         <!-- plan-event box 2 -->
         <div class="grid-33 mobile-grid-50 tablet-grid-50">
-            <a class="plan-event-popup" href="../assets/images/plan-event/large/p2.jpg">
+            <a class="plan-event-popup" href="images/plan-event/large/p2.jpg">
                 <div class="plan-event-box">
-                    <figure class="plan-event-image"><img src="../assets/images/plan-event/thumb/p2.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
+                    <figure class="plan-event-image"><img src="images/plan-event/thumb/p2.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
                     <div class="plan-event-caption">
                         <h3 class="plan-event-title">Angelica<span class="plan-event-category">Photography</span></h3>
                     </div><!-- close plan-event caption -->
@@ -367,7 +367,7 @@
         <div class="grid-33 mobile-grid-50 tablet-grid-50">
             <a class="plan-event-popup-video" href="http://www.youtube.com/watch?v=ZouARplh7iY">
                 <div class="plan-event-box">
-                    <figure class="plan-event-image"><img src="../assets/images/plan-event/thumb/p3.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
+                    <figure class="plan-event-image"><img src="images/plan-event/thumb/p3.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
                     <div class="plan-event-caption">
                         <h3 class="plan-event-title">iMac<span class="plan-event-category">Video</span></h3>
                     </div><!-- close plan-event caption -->
@@ -377,9 +377,9 @@
 
         <!-- plan-event box 4 -->
         <div class="grid-33 mobile-grid-50 tablet-grid-50">
-            <a class="plan-event-popup" href="../assets/images/plan-event/large/p4.jpg">
+            <a class="plan-event-popup" href="images/plan-event/large/p4.jpg">
                 <div class="plan-event-box">
-                    <figure class="plan-event-image"><img src="../assets/images/plan-event/thumb/p4.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
+                    <figure class="plan-event-image"><img src="images/plan-event/thumb/p4.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
                     <div class="plan-event-caption">
                         <h3 class="plan-event-title">Brooklyn<span class="plan-event-category">Logo Design</span></h3>
                     </div><!-- close plan-event caption -->
@@ -389,7 +389,7 @@
 
         <!-- plan-event box 5 -->
         <div class="grid-33 mobile-grid-50 tablet-grid-50">
-            <a class="plan-event-popup" href="../assets/images/plan-event/large/p5.jpg">
+            <a class="plan-event-popup" href="images/plan-event/large/p5.jpg">
                 <div class="plan-event-box">
                     <figure class="plan-event-image"><img src="images/plan-event/thumb/p5.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
                     <div class="plan-event-caption">
@@ -401,9 +401,9 @@
 
         <!-- plan-event box 6 -->
         <div class="grid-33 mobile-grid-50 tablet-grid-50">
-            <a class="plan-event-popup" href="../assets/images/plan-event/large/p6.jpg">
+            <a class="plan-event-popup" href="images/plan-event/large/p6.jpg">
                 <div class="plan-event-box">
-                    <figure class="plan-event-image"><img src="../assets/images/plan-event/thumb/p6.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
+                    <figure class="plan-event-image"><img src="images/plan-event/thumb/p6.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
                     <div class="plan-event-caption">
                         <h3 class="plan-event-title">Cecilia<span class="plan-event-category">Photography</span></h3>
                     </div><!-- close plan-event caption -->
@@ -483,7 +483,7 @@
 
 <!-- member 1 -->
 <div class="member-box grid-25 mobile-grid-100 tablet-grid-50">
-    <figure class="member-photo"><img src="../assets/images/member-1-arum-malik.jpg" alt="member"></figure>
+    <figure class="member-photo"><img src="images/member-1-arum-malik.jpg" alt="member"></figure>
 
     <div class="member-box">
         <h3>Arun Malik</h3>
@@ -494,7 +494,7 @@
 
 <!-- member 1 -->
 <div class="member-box grid-25 mobile-grid-100 tablet-grid-50">
-    <figure class="member-photo"><img src="../assets/images/member-2-kavish-parikh.jpg" alt="member"></figure>
+    <figure class="member-photo"><img src="images/member-2-kavish-parikh.jpg" alt="member"></figure>
 
     <div class="member-box">
         <h3>Kavish Parikh</h3>
@@ -505,7 +505,7 @@
 
 <!-- member 1 -->
 <div class="member-box grid-25 mobile-grid-100 tablet-grid-50">
-    <figure class="member-photo"><img src="../assets/images/member-3-mishal-shah.jpg" alt="member"></figure>
+    <figure class="member-photo"><img src="images/member-3-mishal-shah.jpg" alt="member"></figure>
 
     <div class="member-box">
         <h3>Mishal Shah</h3>
@@ -516,7 +516,7 @@
 
 <!-- member 1 -->
 <div class="member-box grid-25 mobile-grid-100 tablet-grid-50">
-    <figure class="member-photo"><img src="../assets/images/member-4-shashank-garg.jpg" alt="member"></figure>
+    <figure class="member-photo"><img src="images/member-4-shashank-garg.jpg" alt="member"></figure>
 
     <div class="member-box">
         <h3>Shashank Garg</h3>

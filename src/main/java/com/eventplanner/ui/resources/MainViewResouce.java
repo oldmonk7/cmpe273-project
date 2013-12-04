@@ -4,7 +4,12 @@ import com.eventplanner.domain.Plan;
 import com.eventplanner.domain.StakeHolders;
 import com.eventplanner.domain.Users;
 import com.eventplanner.ui.views.MainView;
+import com.google.common.collect.Lists;
 
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 /**
@@ -14,6 +19,9 @@ import java.util.List;
  * Time: 5:23 PM
  * To change this template use File | Settings | File Templates.
  */
+
+@Path("/main")
+@Produces(MediaType.TEXT_HTML)
 public class MainViewResouce {
 
     private Plan plan = new Plan();
@@ -27,10 +35,10 @@ public class MainViewResouce {
 
     public MainViewResouce(){}
 
-
+    @GET
     public MainView getMainView(){
 
-
+        List<StakeHolders> stakeHolders = Lists.newArrayList(stakeHolder.getStakeHolders());
         return new MainView(plan,
                             user,
                             stakeHolder,

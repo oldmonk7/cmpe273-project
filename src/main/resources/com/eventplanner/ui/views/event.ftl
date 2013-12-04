@@ -32,7 +32,11 @@
     <link rel="stylesheet" href="../assets/css/magnific-popup.css" media="all">
     <link rel="stylesheet" href="../assets/css/ut-responsive-grid.css" media="all">
     <link rel="stylesheet" href="../assets/css/style.css" media="all">
-
+    
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 
     <!-- DEMO Switcher
     ================================================== -->
@@ -340,78 +344,71 @@
         <div class="clear"></div>
 
         <!-- plan-event box 1 -->
-        <div class="grid-33 mobile-grid-50 tablet-grid-50">
-            <a class="plan-event-popup" href="../assets/images/plan-event/large/p1.jpg">
-                <div class="plan-event-box">
-                    <figure class="plan-event-image"><img src="../assets/images/plan-event/thumb/p1.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
-                    <div class="plan-event-caption">
-                        <h3 class="plan-event-title">Camera<span class="plan-event-category">Photography</span></h3>
-                    </div><!-- close plan-event caption -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                  <h2>Food</h2>
+                  <div class="list-group">
+                    <#list stakeHolders as sp>
+                    <#list sp.category as cat>
+                    <#if cat == "food">
+                    <li href="#" class="list-group-item">${sp.user.name}</li>
+                    </#if>
+                    </#list>
+                    </#list>
                 </div>
-            </a>
+
         </div><!-- close plan-event -->
+    </div>
 
         <!-- plan-event box 2 -->
-        <div class="grid-33 mobile-grid-50 tablet-grid-50">
-            <a class="plan-event-popup" href="../assets/images/plan-event/large/p2.jpg">
-                <div class="plan-event-box">
-                    <figure class="plan-event-image"><img src="../assets/images/plan-event/thumb/p2.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
-                    <div class="plan-event-caption">
-                        <h3 class="plan-event-title">Angelica<span class="plan-event-category">Photography</span></h3>
-                    </div><!-- close plan-event caption -->
-                </div>
-            </a>
-        </div><!-- close plan-event -->
-
-        <!-- plan-event box 3 -->
-        <div class="grid-33 mobile-grid-50 tablet-grid-50">
-            <a class="plan-event-popup-video" href="http://www.youtube.com/watch?v=ZouARplh7iY">
-                <div class="plan-event-box">
-                    <figure class="plan-event-image"><img src="../assets/images/plan-event/thumb/p3.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
-                    <div class="plan-event-caption">
-                        <h3 class="plan-event-title">iMac<span class="plan-event-category">Video</span></h3>
-                    </div><!-- close plan-event caption -->
-                </div>
-            </a>
-        </div><!-- close plan-event -->
-
-        <!-- plan-event box 4 -->
-        <div class="grid-33 mobile-grid-50 tablet-grid-50">
-            <a class="plan-event-popup" href="../assets/images/plan-event/large/p4.jpg">
-                <div class="plan-event-box">
-                    <figure class="plan-event-image"><img src="../assets/images/plan-event/thumb/p4.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
-                    <div class="plan-event-caption">
-                        <h3 class="plan-event-title">Brooklyn<span class="plan-event-category">Logo Design</span></h3>
-                    </div><!-- close plan-event caption -->
-                </div>
-            </a>
-        </div><!-- close plan-event -->
-
-        <!-- plan-event box 5 -->
-        <div class="grid-33 mobile-grid-50 tablet-grid-50">
-            <a class="plan-event-popup" href="../assets/images/plan-event/large/p5.jpg">
-                <div class="plan-event-box">
-                    <figure class="plan-event-image"><img src="images/plan-event/thumb/p5.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
-                    <div class="plan-event-caption">
-                        <h3 class="plan-event-title">Street<span class="plan-event-category">Photography</span></h3>
-                    </div><!-- close plan-event caption -->
-                </div>
-            </a>
-        </div><!-- close plan-event -->
-
-        <!-- plan-event box 6 -->
-        <div class="grid-33 mobile-grid-50 tablet-grid-50">
-            <a class="plan-event-popup" href="../assets/images/plan-event/large/p6.jpg">
-                <div class="plan-event-box">
-                    <figure class="plan-event-image"><img src="../assets/images/plan-event/thumb/p6.jpg" alt="plan-event image"></figure><!-- close plan-event image -->
-                    <div class="plan-event-caption">
-                        <h3 class="plan-event-title">Cecilia<span class="plan-event-category">Photography</span></h3>
-                    </div><!-- close plan-event caption -->
-                </div>
-            </a>
-        </div><!-- close plan-event -->
+        
 
     </div><!-- close grid-container -->
+    <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                  <h2>Music</h2>
+                  <div class="list-group">
+                    <#list stakeHolders as sp>
+                    <#list sp.category as cat>
+                    <#if cat == "dj">
+                    <li href="#" class="list-group-item">${sp.user.name}</li>
+                    </#if>
+                    </#list>
+                    </#list>
+                </div>
+
+        </div><!-- close plan-event -->
+    </div>
+
+        <!-- plan-event box 2 -->
+        
+
+    </div><!-- close grid-container -->
+    <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                  <h2>Venues</h2>
+                  <div class="list-group">
+                    <#list stakeHolders as sp>
+                    <#list sp.category as cat>
+                    <#if cat == "venue">
+                    <li href="#" class="list-group-item">${sp.user.name}</li>
+                    </#if>
+                    </#list>
+                    </#list>
+                </div>
+
+        </div><!-- close plan-event -->
+    </div>
+
+        <!-- plan-event box 2 -->
+        
+
+    </div><!-- close grid-container -->
+    
+
 </section><!-- close plan-event section -->
 
 <div class="clear"></div>

@@ -36,7 +36,7 @@ public class MainView extends View{
                     List<StakeHolders> stakeHolders,
                     List<Plan> plans){
 
-         super("event.mustache");
+         super("event.ftl");
         this.stakeHolder = stakeHolder;
         this.plan = plan;
         this.user = user;
