@@ -1,17 +1,15 @@
 package com.eventplanner.domain;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.hibernate.validator.constraints.NotEmpty;
-import org.jongo.marshall.jackson.oid.Id;
-import org.jongo.marshall.jackson.oid.ObjectId;
-
 import com.eventplanner.config.DbConfig;
 import com.eventplanner.dto.DataAccess;
 import com.eventplanner.dto.LinksDto;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.hibernate.validator.constraints.NotEmpty;
+import org.jongo.marshall.jackson.oid.Id;
+import org.jongo.marshall.jackson.oid.ObjectId;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Users extends LinksDto {
 
@@ -196,13 +194,11 @@ public class Users extends LinksDto {
 	
 	}
 	
-	public List<String> toResponseList()
+	public String toResponseList()
 	{
-		List<String> obj = new ArrayList<String>();
-		obj.add("Name : " + this.name);
-		obj.add("Auth-Token: "+this.token);
+	   String jsonmsgtoken = "{\"user\":\""+name+"\",\"auth\":\""+token+"\"}";
 
-		return obj;	
+		return jsonmsgtoken;
 
 	}
 	

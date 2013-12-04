@@ -1,38 +1,277 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+
+<!--
+=======================================================================================
+ Brooklyn HTML Template by United Themes (http://www.unitedthemes.com)
+ Marcel Moerkens & Matthias Nettekoven 
+=======================================================================================
+-->
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="shortcut icon" href="../../assets/ico/favicon.png">
-  <style type="text/css"> .selected { background-color: green; }</style>
 
-  <title>Plan my Event</title>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<title>PlanEvent</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-  
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="../../assets/js/html5shiv.js"></script>
-          <script src="../../assets/js/respond.min.js"></script>
-          <![endif]-->
-          <script src="../assets/hello.js"></script>
+	<!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/reset.css" media="all">
+    <link rel="stylesheet" href="css/ut-fontface.css" media="all">
+    <link rel="stylesheet" href="css/font-awesome.css" media="all">
+	<link rel="stylesheet" href="css/flexslider.css" media="all">
+    <link rel="stylesheet" href="css/magnific-popup.css" media="all">
+    <link rel="stylesheet" href="css/ut-responsive-grid.css" media="all">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    
+    <!-- DEMO Switcher
+  	================================================== -->
+    <link rel="stylesheet" href="../styleswitcher/css/styleswitcher.css">
+    
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+    
+    <!--[if lte IE 8]> 
+		<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<!-- Load jQuery
+  	================================================== -->
+  	<script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/device.min.js"></script>
+     <script src="js/hello.js"></script>
+          
+    
+    <!-- DEMO Switcher
+  	================================================== -->
+   
+    
+</head>
+
+<body id="mainsite">
+	
+
+    
+    <a id="top"></a>
+    
+	<!-- Page Layout
+	================================================== -->
+    
+     <!-- header section -->
+	<header id="header-section" class="ha-header ">
+    	<div class="grid-container">
+				<div class="ha-header-perspective">
+					<div class="ha-header-front">
+                    <div class="grid-30 tablet-grid-20 hide-on-mobile">
+						</div>
+						<nav id="ut-navigation" class="grid-70 tablet-grid-80 mobile-grid-100">
+              <a href="home.html">Home</a>
+              <a href="#main-content">About</a>
+              
+              <a class="selected" href="plan.html">Plan Event</a>
+              <a href="myplan.html">My Plan</a>
+              <a href="team.html">Team</a>
+              <a href="register.html">Register</a>
+            </nav>
+					</div>
+				</div><!-- close .ha-header-perspective --> 
+        </div><!-- close grid container -->  
+    </header><!-- close header -->
+    
+    <div class="clear"></div>
+    
+	
+    
+    <div class="clear"></div>
+   
+    <div id="main-content" class="wrap">
+    
+   
+            
+    <div class="clear"></div>
+    
+    <section id="team-section" class="team-section content-section">
+
+            <!-- section header -->
+            <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
+                <header class="section-header">
+                    <h2 class="section-title"><span>Plan</span></h2>
+                  </header>
+            </div>
+            <!-- close section header -->
+            
+            <div class="clear"></div>
+            
+            <!-- member 1 -->
+            <div class="member-box grid-25 mobile-grid-100 tablet-grid-50">
+                 
+                <div class="member-box">
+                    <div class="row">
+                         <div class="col-sm-2">
+                            <h2>Food</h2>
+                              <div class="list-group">
+                                <#list stakeHolders as sp>
+                                <#list sp.category as cat>
+                                <#if cat == "food">
+                                <a href="#" class="list-group-item">${sp.user.name}</a>
+                                </#if>
+                                </#list>
+                                </#list>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div><!-- close member -->
+            
+            <!-- member 1 -->
+            <div class="member-box grid-25 mobile-grid-100 tablet-grid-50">
+                
+                <div class="member-box">
+                   <div class="row">
+                          <div class="col-sm-2">
+                          <h2>Music</h2>
+                              <div class="list-group">
+                                <#list stakeHolders as sp>
+                                <#list sp.category as cat>
+                                <#if cat == "dj">
+                                <a href="#" class="list-group-item selected">${sp.user.name}</a>
+                                </#if>
+                                </#list>
+                                </#list>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div><!-- close member -->
+            
+            <!-- member 1 -->
+            <div class="member-box grid-25 mobile-grid-100 tablet-grid-50">
+               
+                <div class="member-box">
+                    <div class="row">
+                           <div class="col-sm-2">
+                              <h2>Venues</h2>
+                                  <div class="list-group">
+                                    <#list stakeHolders as sp>
+                                    <#list sp.category as cat>
+                                    <#if cat == "venue">
+                                    <a href="#" class="list-group-item">${sp.user.name}</a>
+                                    </#if>
+                                    </#list>
+                                    </#list>
+                                  </div>
+                            </div>
+                    </div>
+                </div>
+                
+            </div><!-- close member -->
+            
+             <!-- member 1 -->
+            <div class="member-box grid-25 mobile-grid-100 tablet-grid-50">
+                <div class="member-box">
+                    <div class="row">
+                          <div class="col-lg-4" > 
+                              <h2>Plan</h2>
+                              <div class="list-group">
+
+                                <form id="plan" action="">
+                                  <div id="sps"></div>
+
+                                  <div id="planbutton"> </div>
+                                </form>
+
+
+                              </div>
+                            </div>
+                    </div>
+
+                </div>
+                
+            </div><!-- close member -->
+            
+          
+            
+        </div><!-- close grid-container -->  
+    </section><!-- close team section -->
+    
+    <div class="clear"></div>
+    
+    
+</div>
+	
+    <!-- Load Javascript
+  	================================================== -->
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.parallax.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+   	<script src="js/jquery.custom.js"></script>
+
+    <script>
+            function getCookie(c_name)
+              {
+              var c_value = document.cookie;
+              var c_start = c_value.indexOf(" " + c_name + "=");
+              if (c_start == -1)
+                {
+                c_start = c_value.indexOf(c_name + "=");
+                }
+              if (c_start == -1)
+                {
+                c_value = null;
+                }
+              else
+                {
+                c_start = c_value.indexOf("=", c_start) + 1;
+                var c_end = c_value.indexOf(";", c_start);
+                if (c_end == -1)
+                {
+              c_end = c_value.length;
+              }
+              c_value = unescape(c_value.substring(c_start,c_end));
+              }
+              return c_value;
+              }
+
+          </script>
           <script type="text/javascript">
 
           $(document).ready(function() {
 
 
+            debugger;
+              var username = getCookie(name);
+             // var username = getCookie(name);
+              
+              
+
            $(".list-group-item").click(function(event) {
             event.preventDefault();
             $(this).css("backgroundColor","green");
-            $('#sps').append('<h3><input name="category[]" type="checkbox" href="#" value="'+$(this).html()+'" checked>' + " " + $(this).html()+"</h3>");
+            $('#username').html('<input type="text" name="user" style="{display:none;}"value="'+ username +'"></input>');
+            $('#sps').append('<h3><input name="stakeHolders[]" type="checkbox" href="#" value="'+$(this).html()+'" checked>' + " " + $(this).html()+"</h3>");
             $('#planbutton').html('<input type="submit" class="btn btn-primary" id="makeplan" value="Build Plan!">')
             //$('#plan').append($(this).html());
             //$('#plan').append('</a>');
@@ -108,131 +347,29 @@
 
 </script>
 
-
-</head>
-
-<body>
-
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Event Planner</a>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="dropdown" id="menu1" class="nav pull-right">
-           <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
-             Login
-             <b class="caret"></b>
-           </a>
-                   <!--<div class="dropdown-menu">
-                     <form style="margin: 0px" accept-charset="UTF-8" action="/sessions" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" />
-                      <input name="authenticity_token" type="hidden" value="user" /></div>
-                      <fieldset class='textbox' style="padding:10px">
-                       <input style="margin-top: 8px" type="text" placeholder="Username" />
-                       <input style="margin-top: 8px" type="password" placeholder="Passsword" />
-                       <input class="btn-primary" name="commit" type="submit" value="Log In" />
-                     </fieldset>
-                   </form>
-
-                 </div>
-               -->
-             </li>
-           </ul>
-         </div><!--/.nav-collapse -->
-       </div>
-     </div>
-
-     <div class="container">
-
-
-      <br>
-      <br>
-      
-
-      
-
-
-      <div class="row">
-        <div class="col-sm-2">
-          <h2>Food</h2>
-          <div class="list-group">
-            <#list stakeHolders as sp>
-            <#list sp.category as cat>
-            <#if cat == "food">
-            <a href="#" class="list-group-item">${sp.user.name}</a>
-            </#if>
-            </#list>
-            </#list>
-          </div>
-
-        </div>
-        <div class="col-sm-2">
-          <h2>Music</h2>
-          <div class="list-group">
-            <#list stakeHolders as sp>
-            <#list sp.category as cat>
-            <#if cat == "dj">
-            <a href="#" class="list-group-item selected">${sp.user.name}</a>
-            </#if>
-            </#list>
-            </#list>
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <h2>Venues</h2>
-          <div class="list-group">
-            <#list stakeHolders as sp>
-            <#list sp.category as cat>
-            <#if cat == "venue">
-            <a href="#" class="list-group-item">${sp.user.name}</a>
-            </#if>
-            </#list>
-            </#list>
-          </div>
-        </div>
-        <div class="col-lg-8 hidden" > 
-
-        </div>
-
-
-        <div class="col-lg-4" > 
-          <h2>Plan</h2>
-          <div class="list-group">
-
-            <form id="plan" action="">
-              <div id="sps"></div>
-
-              <div id="planbutton"> </div>
-            </form>
-
-
-          </div>
-        </div>
-
-
-      </div>
-      <div id="response"></div>
-          </div><!-- /.container -->
-
-
-    <!-- script tags -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-   
-    <!-- Latest compiled and minified JavaScript -->
-   <script type="text/JavaScript" src="../assets/jquery.serializeJSON.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
-  </body>
-  </html>
-
-
-
+    
+     <script type="text/javascript">
+     /* <![CDATA[ */
+		
+		(function($){
+	
+		"use strict";
+    		
+			$(document).ready(function(){
+				$(window).load(function(){
+					$('.main-slider').flexslider({
+						animation: "fade",
+						directionNav:true
+					});
+				});
+			});
+			
+		})(jQuery);
+		
+	/* ]]> */	
+    </script>
+    
+<!-- End Document
+================================================== -->
+</body>
+</html>

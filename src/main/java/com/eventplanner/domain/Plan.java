@@ -1,14 +1,13 @@
 package com.eventplanner.domain;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.jongo.marshall.jackson.oid.Id;
-import org.jongo.marshall.jackson.oid.ObjectId;
-
 import com.eventplanner.config.DbConfig;
 import com.eventplanner.dto.DataAccess;
 import com.eventplanner.dto.LinksDto;
+import org.jongo.marshall.jackson.oid.Id;
+import org.jongo.marshall.jackson.oid.ObjectId;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Plan extends LinksDto {
 	
@@ -21,7 +20,7 @@ public class Plan extends LinksDto {
 	@Id @ObjectId 
     private String key;
 	private int number;
-	private Users user;
+	private String user;
 	private List<String> stakeHolders;
 	
 	public String getKey() {
@@ -31,13 +30,7 @@ public class Plan extends LinksDto {
 		this.key = key;
 	}
 
-	public Users getUser() {
-		return user;
-	}
 
-	public void setUser(Users user) {
-		this.user = user;
-	}
 
 	public List<String> getStakeHolders() {
 		return stakeHolders;
@@ -198,6 +191,11 @@ public class Plan extends LinksDto {
 	}
 
 
+    public String getUser() {
+        return user;
+    }
 
-
+    public void setUser(String user) {
+        this.user = user;
+    }
 }

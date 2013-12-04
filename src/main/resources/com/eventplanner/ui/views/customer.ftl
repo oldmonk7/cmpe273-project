@@ -1,19 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+
+<!--
+=======================================================================================
+ Brooklyn HTML Template by United Themes (http://www.unitedthemes.com)
+ Marcel Moerkens & Matthias Nettekoven 
+=======================================================================================
+-->
+
 <head>
- <!-- Latest compiled and minified CSS -->
- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
- <!-- Optional theme -->
- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
 
- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
- <!-- Latest compiled and minified JavaScript -->
- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
- <script src="../assets/hello.js"></script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<title>CustomerSignUp</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
- <script type="text/javascript">
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="../assets/css/reset.css" media="all">
+    <link rel="stylesheet" href="../assets/css/ut-fontface.css" media="all">
+    <link rel="stylesheet" href="../assets/css/font-awesome.css" media="all">
+	  <link rel="stylesheet" href="../assets/css/flexslider.css" media="all">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css" media="all">
+    <link rel="stylesheet" href="../assets/css/ut-responsive-grid.css" media="all">
+    <link rel="stylesheet" href="../assets/css/style.css" media="all">
+    
+    <!-- DEMO Switcher
+  	================================================== -->
+    <link rel="stylesheet" href="../styleswitcher/css/styleswitcher.css">
+    
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+    
+    <!--[if lte IE 8]> 
+		<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="../assets/images/favicon.ico">
+	<link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/apple-touch-icon-114x114.png">
+
+	<!-- Load jQuery
+  	================================================== -->
+  	<script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/modernizr.js"></script>
+    <script src="../assets/js/device.min.js"></script>
+     <script src="../assets/js/hello.js"></script>
+    
+    <!-- DEMO Switcher
+  	================================================== -->
+    <script src="../styleswitcher/js/styleswitcher.js"></script>
+    
+</head>
+
+<body id="mainsite">
+	
+   
+    
+    <a id="top"></a>
+    
+	<!-- Page Layout
+	================================================== -->
+    
+     <!-- header section -->
+	<header id="header-section" class="ha-header">
+    	<div class="grid-container">
+				<div class="ha-header-perspective">
+					<div class="ha-header-front">
+            <div class="grid-30 tablet-grid-20 hide-on-mobile">
+						</div>
+						<nav id="ut-navigation" class="grid-70 tablet-grid-80 mobile-grid-100">
+            	<a href="home.html">Home</a>
+                <a href="#main-content">About</a>
+                
+                <a href="plan.html">Plan Event</a>
+                <a href="myplan.html">My Plan</a>
+                <a href="team.html">Team</a>
+                <a class="selected" href="register.html">Register</a>
+						</nav>
+					</div>
+				</div><!-- close .ha-header-perspective --> 
+        </div><!-- close grid container -->  
+    </header><!-- close header -->
+    
+    <div class="clear"></div>
+    
+	
+   
+    <div id="main-content" class="wrap">
+    
+    <!-- about section -->
+	<section id="about-section" class="about-section content-section ha-waypoint" data-animate-up="ha-header-hide" data-animate-down="ha-header-small">
+		<div class="grid-container">
+        	
+            <!-- section header -->
+            <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
+                <header class="section-header">
+                    <h2 class="section-title"><span>Customer Sign Up</span></h2>
+               </header>
+            </div>
+            <!-- close section header -->
+            
+            <div  style="margin-left:20%;"class="grid-50 tablet-grid-100 mobile-grid-100 about-box">
+            	 <form class="form-horizontal" id="form1" role="form" method="POST" action="signup/customer">
+                    <div class="form-group">
+                      <label for="inputName" class="col-lg-2 control-label">Name</label>
+                      <div class="col-lg-4">
+                        <input type="text" class="form-control" id="inputName" name="name" placeholder="Name">
+                        <span><div class="container" id="profile"></div></span>
+
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                     <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+                     <div class="col-lg-4">
+                      <input type="email" class="form-control" id="inputEmail1" name="email" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                   <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
+                   <div class="col-lg-2">
+                    <input type="password" class="form-control" id="inputPassword1" name="password" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                 <label for="inputPhone" class="col-lg-2 control-label">Phone</label>
+                 <div class="col-lg-2">
+                  <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="Phone">
+                </div> (optional)
+                </div>
+                <div class="form-group">
+                 <div class="col-lg-offset-2 col-lg-2">
+                  <input type="submit" class="btn btn-primary" id="signup" value="Sign Up!">
+                </div>
+                </div>
+                </form>
+
+                
+                    <button class= "btn btn-primary btn-lg" onclick="hello( 'facebook' ).login()">Sign in with Facebook</button>
+                    <button class= "btn btn-primary btn-lg" onclick="hello( 'google' ).login()">Sign in with Google</button>
+       
+
+            </div>
+
+            
+
+
+           
+<div id="response">
+            
+    	</div><!-- close grid-container -->
+    </section><!-- close about section -->
+            
+    <div class="clear"></div>
+    
+   
+</div>
+	
+    <!-- Load Javascript
+  	================================================== -->
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.parallax.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+   	<script src="js/jquery.custom.js"></script>
+    
+     <script type="text/javascript">
+     /* <![CDATA[ */
+		
+		(function($){
+	
+		"use strict";
+    		
+			$(document).ready(function(){
+				$(window).load(function(){
+					$('.main-slider').flexslider({
+						animation: "fade",
+						directionNav:true
+					});
+				});
+			});
+			
+		})(jQuery);
+		
+	/* ]]> */	
+    </script>
+
+    <script type="text/javascript">
 
  
+
+
 
  $(document).ready(function(){
 
@@ -75,7 +267,7 @@
               }); */
 
            $.ajax({
-             url: '/signup/customer',
+             url: '/users',
              async:'false',
              type: 'POST',
              dataType: 'json',
@@ -132,154 +324,12 @@ hello.on('auth.login', function(auth){
 
 
 
-   /* $( "#signup" ).submit(function( event ) {
-
-  // Stop form from submitting normally
-  event.preventDefault();
-
-  // Get some values from elements on the page:
-  var $form = $( this ),
-  term = $form.find( "input[name='s']" ).val(),
-  url = $form.attr( "action" );
-
-  // Send the data using post
-  var posting = $.post( url, { s: term } );
-
-  // Put the results in a div
-  posting.done(function( data ) {
-    var content = $( data ).find( "#content" );
-    $( "#result" ).empty().append( content );
-});
-});
-*/
-
-
-
-
-
-
-
 
 </script>
 
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="shortcut icon" href="../../assets/ico/favicon.png">
-<title>Customer Sign Up</title>
-
-
-
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!--[if lt IE 9]>
-        <script src="../../assets/js/html5shiv.js"></script>
-        <script src="../../assets/js/respond.min.js"></script>
-        <![endif]-->
-
-      </head>
-
-
-      <body>
-
-       <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-         <a class="navbar-brand" href="#">Event Planner</a>
-       </div>
-       <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-         <li class="active"><a href="#">Home</a></li>
-         <li><a href="#about">About</a></li>
-         <li><a href="#contact">Contact</a></li>
-         <li class="dropdown" id="menu1" class="nav pull-right">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
-           Login
-           <b class="caret"></b>
-         </a>
-         <div class="dropdown-menu">
-
-         </div>
-       </li>
-     </ul>
-   </div><!--/.nav-collapse -->
- </div>
-</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-
-
-<div class="container well" >
-  <form class="form-horizontal" id="form1" role="form" method="POST" action="signup/customer">
-    <div class="form-group">
-      <label for="inputName" class="col-lg-2 control-label">Name</label>
-      <div class="col-lg-4">
-        <input type="text" class="form-control" id="inputName" name="name" placeholder="text">
-        <span><div class="container" id="profile"></div></span>
-
-      </div>
-    </div>
-
-    <div class="form-group">
-     <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
-     <div class="col-lg-4">
-      <input type="email" class="form-control" id="inputEmail1" name="email" placeholder="Email">
-    </div>
-  </div>
-  <div class="form-group">
-   <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
-   <div class="col-lg-2">
-    <input type="password" class="form-control" id="inputPassword1" name="password" placeholder="Password">
-  </div>
-</div>
-<div class="form-group">
- <label for="inputPhone" class="col-lg-2 control-label">Phone</label>
- <div class="col-lg-2">
-  <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="Phone">
-</div> (optional)
-</div>
-<div class="form-group">
- <div class="col-lg-offset-2 col-lg-2">
-  <input type="submit" class="btn btn-primary" id="signup" value="Sign Up!">
-</div>
-</div>
-</form>
-
-
-<div class="container">
-  <button class= "btn btn-primary btn-lg" onclick="hello( 'facebook' ).login()">Sign in with Facebook</button>
-
-</div>
-
-<div class="container">
-  <button class= "btn btn-primary btn-lg" onclick="hello( 'google' ).login()">Sign in with Google</button>
-
-</div>
-<div id="response">
-   
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
+    
+<!-- End Document
+================================================== -->
 </body>
 </html>

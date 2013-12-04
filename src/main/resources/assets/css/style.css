@@ -54,11 +54,11 @@ body {
 }
 ::-moz-selection  {
 	color: #FFFFFF;
-	background: #9b59b6;
+	background: #3498db;
 }
 ::selection {
 	color: #FFFFFF;
-	background:#9b59b6;
+	background:#3498db;
 }
 
 /* #Typography
@@ -77,12 +77,12 @@ p { margin: 0 0 20px 0; }
 p img { margin: 0; }
 p.lead { font-size: 21px; line-height: 27px; color: #77777;  }
 em { font-style: italic; }
-strong { font-weight: bold; color: #9b59b6; }
+strong { font-weight: bold; color: #3498db; }
 small { font-size: 80%; }
 
 /*	Blockquotes  */
 
-blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #9b59b6; font-style: italic; }
+blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #3498db; font-style: italic; }
 blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #DDDDDD; }
 blockquote cite { display: block; font-size: 12px; color: #999999; }
 blockquote cite:before { content: "\2014 \0020"; }
@@ -95,7 +95,7 @@ hr { border: solid #DDDDDD; border-width: 1px 0 0; clear: both; margin: 20px 0 4
 
 a, 
 a:visited { 
-	color: #9b59b6; 
+	color: #3498db; 
 	text-decoration: none; 
 	outline: 0;
 	-webkit-transform: translateZ(0);
@@ -104,7 +104,7 @@ a:visited {
 			transition:0.2s color linear;
 }
 .selected {
-	color: #9b59b6 !important;
+	color: #3498db !important;
 }
 a:hover, a:focus { color: #555555; }
 p a, p a:visited { line-height: inherit; }
@@ -123,7 +123,7 @@ ul ul, ul ol,
 ol ol, ol ul { margin-left: 30px; }
 ul ul li, ul ol li,
 ol ol li, ol ul li { margin-bottom: 0 }
-.icons-ul i { color:#9b59b6; }
+.icons-ul i { color:#3498db; }
 
 /* #Images
 ================================================== */
@@ -230,7 +230,7 @@ img {
     display: none;
 }
 .ha-header nav a:hover {
-	color: #9b59b6;
+	color: #3498db;
 }
 .ha-header-small {
 	height: 80px;
@@ -312,7 +312,7 @@ img {
 	background-position: top center;
 }
 .hero-title span {
-	color:#9b59b6;
+	color:#3498db;
 }
 .hero-description {
 	color:#FFFFFF;
@@ -376,7 +376,7 @@ img {
 	text-align:center;
 	line-height:60px;
 	margin-bottom:20px;
-	background:#9b59b6;
+	background:#3498db;
 	-webkit-border-radius:50%;
 		-moz-border-radius:50%;
 			border-radius:50%;	
@@ -406,7 +406,7 @@ img {
 	position:relative;
 }
 .info h3 {
-	color:#9b59b6;
+	color:#3498db;
 }
 .icon-box { 
 	position:relative;
@@ -503,13 +503,13 @@ img {
 
 .cta-section {
 	position:relative;
-	background:#9b59b6;
+	background:#3498db;
 	text-align:center;
 	padding:50px 0;
 	color:#FFFFFF;
 }
 .cta-section .section-title span {
-	background:#9b59b6;
+	background:#3498db;
 }
 .cta-btn {
 	font-family:'ralewaymedium',Helvetica,Arial,sans-serif;
@@ -636,8 +636,8 @@ img {
 	opacity:0;
 	text-align:center;
 	overflow:hidden;
-	background:rgb(155, 89, 182);
-	background:rgba(155, 89, 182, 0.85);
+	background:rgb(52, 152, 219);
+	background:rgba(52, 152, 219, 0.85);
 	-webkit-backface-visibility:hidden;
 	-webkit-transform: translateZ(0);
 	-webkit-transition:0.2s all linear;
@@ -758,7 +758,7 @@ img {
 	opacity:0;
 }
 .contact-wrap h3 {
-	color:#9b59b6;
+	color:#3498db;
 	margin-bottom:20px;
 }
 .contact-message {
@@ -806,8 +806,8 @@ img {
 	color:#FFFFFF;
 }
 .social-link:hover .social-icon {
-	background:rgb(155, 89, 182);
-	background:rgba(155, 89, 182, 0.85);
+	background:rgb(52, 152, 219);
+	background:rgba(52, 152, 219, 0.85);
 }
 .social-icon {
 	display:block;
@@ -834,7 +834,7 @@ img {
 }
 .social-title {
 	font-size:10px;
-	color:#9b59b6;
+	color:#3498db;
 	letter-spacing:1px;
 	text-transform:uppercase;
 }
@@ -965,7 +965,7 @@ img {
 	color:#999999;
 }
 .entry-meta a:hover {
-	color:#9b59b6;
+	color:#3498db;
 }
 .more-link {
 	text-align:center;
@@ -982,7 +982,7 @@ img {
 			border-radius:3px;
 }
 .more-link:hover {
-	background:#9b59b6;
+	background:#3498db;
 	color:#FFFFFF;
 }
 .nav-below ul {
@@ -1046,7 +1046,7 @@ img {
 	background:#FFFFFF;	
 }
 .footer i {
-	color:#9b59b6;
+	color:#3498db;
 }
 .footer h3 {
 	text-transform:none;
@@ -1065,7 +1065,7 @@ img {
 	text-transform:uppercase;
 }
 .copyright a:hover {
-	color:#9b59b6;
+	color:#3498db;
 }
 
 /* #Buttons
@@ -1075,7 +1075,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-	background:#9b59b6;
+	background:#3498db;
   	border: none;
 	display: inline-block;
 	text-align:center;

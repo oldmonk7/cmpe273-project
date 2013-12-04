@@ -1,134 +1,145 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+
+<!--
+=======================================================================================
+ Brooklyn HTML Template by United Themes (http://www.unitedthemes.com)
+ Marcel Moerkens & Matthias Nettekoven 
+=======================================================================================
+-->
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
-  <title>Plan my Event</title>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<title>Plan Your Event</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  <!-- Latest compiled and minified CSS -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="../../assets/js/html5shiv.js"></script>
-          <script src="../../assets/js/respond.min.js"></script>
-          <![endif]-->
-          <script src="../assets/hello.js"></script>
-          
+	<!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/reset.css" media="all">
+    <link rel="stylesheet" href="css/ut-fontface.css" media="all">
+    <link rel="stylesheet" href="css/font-awesome.css" media="all">
+	<link rel="stylesheet" href="css/flexslider.css" media="all">
+    <link rel="stylesheet" href="css/magnific-popup.css" media="all">
+    <link rel="stylesheet" href="css/ut-responsive-grid.css" media="all">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    
+    
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+    
+    <!--[if lte IE 8]> 
+		<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+	<![endif]-->
 
-        </head>
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-        <body>
-
-          <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Event Planner</a>
-              </div>
-              <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                  <li class="dropdown">
-                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login<b class="caret"></b></a>
-                    <div class="dropdown-menu">
-                     <form style="margin: 0px" accept-charset="UTF-8" action="/sessions" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" />
-                      <input name="authenticity_token" type="hidden" value="user" /></div>
-                      <fieldset class='textbox' style="padding:10px">
-                       <input style="margin-top: 8px" type="text" placeholder="Username" />
-                       <input style="margin-top: 8px" type="password" placeholder="Passsword" />
-                       <input class="btn-primary" name="commit" type="submit" value="Log In" />
-                     </fieldset>
-                   </form>
-
-                 </div>
-               
-             </li>
-           </ul>
-         </div><!--/.nav-collapse -->
-       </div>
-     </div>
-
-     <div class="container">
-
-
-      <br>
-      <br>
-      <div class="jumbotron">
-
-        <h1>Plan your Event</h1>
-
-
-
-      </div>
-      <div>
-        <form class="navbar-form pull-right">
-          <div class="input-group">
-            <input type="search" class="form-control" placeholder="Search"/>
-            <span class="input-group-btn">
-              <button type="submit" class="btn btn-info">Search</button>
-            </span>
-          </div>
-        </form>
-      </div>
-     <br>
-     <br>
-     <div class="clearfix"></div>
+	<!-- Load jQuery
+  	================================================== -->
+  	<script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/device.min.js"></script>
     
 
-     <div class="row" >
-      <div class="col-md-4 col-md-offset-2"> 
-       
-         <form action="/customer">
-           <input type = "submit" class = "btn btn-primary btn-lg" value = "Sign up as Customer">
-         </form>
-       
-      </div>
-      <div class-"col-md-8 col-md-offset-4">
-       
-         <form  action = "/serviceprovider">
-          <input type = "submit" class = "btn btn-warning btn-lg" value = "Sign up as Service Provider">
-         </form>
-       
-       </div>
+    
+</head>
 
-     </div><!-- Row -->
-
-
-
-
-
-
-
-
-
-</div><!-- /.container -->
-
-
-
-<!-- script tags -->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
-<!-- Latest compiled and minified JavaScript -->
-<!--  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
-
+<body id="mainsite">
+	
+    
+    <a id="top"></a>
+    
+	<!-- Page Layout
+	================================================== -->
+    
+     
+    
+    <div class="clear"></div>
+    
+	<!-- slider section -->
+    <section class="slider hero ha-waypoint" data-animate-up="ha-header-hide" data-animate-down="ha-header-hide">
+		<div class="parallax-overlay parallax-overlay-1"></div>
+        
+        <div class="grid-container">
+            <!-- hero holder -->
+            <div class="hero-holder grid-70 mobile-grid-100 tablet-grid-100">
+            	<div class="hero-inner">
+                    <span class="hero-description">Your Personal Event Planner</span>
+                    <h1 class="hero-title">Plan your <span>event</span></h1>
+                    <a  class="hero-btn" href="about.html">Get Started</a>
+                </div>
+            </div><!-- close hero-holder -->    													
+    	</div>
+        
+        <!-- slider -->
+        <div class="main-slider">
+        	<ul class="slides">
+        		<li style="background:url(images/slider/slide-3.jpg);"></li>
+                <li style="background:url(images/slider/slide-4.jpg);"></li>
+                <li style="background:url(images/slider/slide-5.jpg);"></li>
+                <li style="background:url(images/slider/slide-6.jpg);"></li>
+                <li style="background:url(images/slider/slide-7.jpg);"></li>
+            </ul>
+        </div>
+        <!-- close slider -->
+        
+    </section>
+    <!-- close hero section -->
+    
+    
+	
+    <div class="clear"></div>
+    
+	
+</div>
+	
+    <!-- Load Javascript
+  	================================================== -->
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.parallax.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+   	<script src="js/jquery.custom.js"></script>
+    
+     <script type="text/javascript">
+     /* <![CDATA[ */
+		
+		(function($){
+	
+		"use strict";
+    		
+			$(document).ready(function(){
+				$(window).load(function(){
+					$('.main-slider').flexslider({
+						animation: "fade",
+						directionNav:true
+					});
+				});
+			});
+			
+		})(jQuery);
+		
+	/* ]]> */	
+    </script>
+    
+<!-- End Document
+================================================== -->
 </body>
 </html>
-
-
-
