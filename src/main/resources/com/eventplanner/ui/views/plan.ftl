@@ -129,7 +129,7 @@
                                 <#list stakeHolders as sp>
                                 <#list sp.category as cat>
                                 <#if cat == "food">
-                                <a href="#" class="list-group-item">${sp.user.name}</a>
+                                <li><a href="#" class="list-group-item">${sp.user.name}</a></li>
                                 </#if>
                                 </#list>
                                 </#list>
@@ -151,7 +151,7 @@
                                 <#list stakeHolders as sp>
                                 <#list sp.category as cat>
                                 <#if cat == "dj">
-                                <a href="#" class="list-group-item selected">${sp.user.name}</a>
+                                <li><a href="#" class="list-group-item selected">${sp.user.name}</a></li>
                                 </#if>
                                 </#list>
                                 </#list>
@@ -173,7 +173,7 @@
                                     <#list stakeHolders as sp>
                                     <#list sp.category as cat>
                                     <#if cat == "venue">
-                                    <a href="#" class="list-group-item">${sp.user.name}</a>
+                                    <li><a href="#" class="list-group-item">${sp.user.name}</a></li>
                                     </#if>
                                     </#list>
                                     </#list>
