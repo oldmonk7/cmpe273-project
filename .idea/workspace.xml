@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b45984a-6853-4788-96ed-d0db96b97734" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/dev_config.yml" afterPath="$PROJECT_DIR$/config/dev_config.yml" />
-    </list>
+    <list default="true" id="4b45984a-6853-4788-96ed-d0db96b97734" name="Default" comment="" />
     <ignored path="eventplanner.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386184460424" ignored="false" />

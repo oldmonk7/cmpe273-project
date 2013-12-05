@@ -323,7 +323,7 @@
 
           }).done(function(data) {
              //alert(data);
-             $('#response').html("<h1>Congratz! Your plan is live</h1>");
+             $('#response').html("<h1>Congratz! Your plan is live. The service providers will contact you soon</h1>");
 
 
              console.log("success");
