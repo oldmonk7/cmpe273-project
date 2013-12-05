@@ -300,10 +300,11 @@
              console.log(data.msg);
            })
            .fail(function(data) {
-         
+            
              console.log("error");
            })
            .always(function() {
+               window.location.replace("/plan/build");
              console.log("complete");
            });
 

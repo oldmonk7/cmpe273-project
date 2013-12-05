@@ -2,28 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b45984a-6853-4788-96ed-d0db96b97734" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/css/fonts/flexslider-icon.woff" afterPath="$PROJECT_DIR$/src/main/resources/assets/css/fonts/flexslider-icon.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/css/fonts/flexslider-icond41d.eot" afterPath="$PROJECT_DIR$/src/main/resources/assets/css/fonts/flexslider-icond41d.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/css/fonts/fontawesome-webfontf77b.woff" afterPath="$PROJECT_DIR$/src/main/resources/assets/css/fonts/fontawesome-webfontf77b.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/css/fonts/raleway-light-webfontd41d.eot" afterPath="$PROJECT_DIR$/src/main/resources/assets/css/fonts/raleway-light-webfontd41d.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/css/fonts/raleway-regular-webfontd41d.eot" afterPath="$PROJECT_DIR$/src/main/resources/assets/css/fonts/raleway-regular-webfontd41d.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/LoginResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/domain/Plan.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/domain/Plan.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eventplanner/domain/Users.java" afterPath="$PROJECT_DIR$/src/main/java/com/eventplanner/domain/Users.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/app.log" afterPath="$PROJECT_DIR$/logs/app.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/customer.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/customer.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/event.mustache" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/event.mustache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/home.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/home.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/home.html" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/plan.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/plan.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/css/reset.css" afterPath="$PROJECT_DIR$/src/main/resources/assets/css/reset.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/serviceprovider.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/serviceprovider.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/css/style.css" afterPath="$PROJECT_DIR$/src/main/resources/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eventplanner.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386114462614" ignored="false" />
+    <file path="/Dummy.txt" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386184460424" ignored="false" />
     <file path="/fragment.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384125010347" ignored="false" />
     <file path="/HomeView.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386057252060" ignored="false" />
     <file path="/LoginView.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1384123292772" ignored="false" />
@@ -200,7 +186,7 @@
       <file leaf-file-name="EventPlanningService.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="64" selection-start="2360" selection-end="2360" vertical-scroll-proportion="0.8505155">
+            <state line="58" column="64" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.61340207">
               <folding />
             </state>
           </provider>
@@ -210,9 +196,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/TeamResource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="30" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -230,9 +214,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/StakeHolderView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="42" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -241,9 +223,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/RegisterResource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="34" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -261,9 +241,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/AboutResource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="15" column="50" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -370,7 +348,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -719,7 +697,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -735,9 +713,9 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -782,6 +760,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -807,19 +798,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -902,7 +880,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -913,10 +890,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.6712538" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.6712538" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1018,9 +996,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/dev_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="27" selection-start="300" selection-end="466" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="20" column="27" selection-start="300" selection-end="466" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/SignUpResource.java">
@@ -1049,9 +1025,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/AboutResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="50" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,18 +1046,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/RegisterResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="34" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/StakeHolderView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="42" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,15 +1067,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/TeamResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="30" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="64" selection-start="2360" selection-end="2360" vertical-scroll-proportion="0.8505155">
+        <state line="58" column="64" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.61340207">
           <folding />
         </state>
       </provider>

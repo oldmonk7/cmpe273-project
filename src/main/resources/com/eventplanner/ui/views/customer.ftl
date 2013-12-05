@@ -283,13 +283,13 @@
               document.cookie="Auth-Token="+authToken;
 
              $('#response').html("<h1>Congratz! You are signed up</h1>");
-            
+             window.location.replace("/plan/build");
   
              console.log("success");
              console.log(data.msg);
            })
            .fail(function(data) {
-         
+              window.location.replace("/plan/build");
              console.log("error");
            })
            .always(function() {
