@@ -86,7 +86,7 @@
                             <a   href="/about">About</a>
                             
                             <a  href="/plan/build">Plan Event</a>
-                            <a href="/myplan">My Plan</a>
+                            <!--<a href="/myplan">My Plan</a>-->
                             <a  href="/team">Team</a>
                             <a href="/register">Register</a>
                               <a  class="selected" href="/login">Log In</a>

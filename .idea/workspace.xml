@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b45984a-6853-4788-96ed-d0db96b97734" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/about.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/about.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/app.log" afterPath="$PROJECT_DIR$/logs/app.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/customer.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/customer.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/login.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/login.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/plan.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/plan.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/register.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/register.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/serviceprovider.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/serviceprovider.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/team.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/team.ftl" />
     </list>
     <ignored path="eventplanner.iws" />
     <ignored path=".idea/workspace.xml" />

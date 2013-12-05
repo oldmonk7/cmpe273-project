@@ -4641,3 +4641,91 @@ INFO  [2013-12-04 19:29:12,727] com.yammer.dropwizard.config.Environment: tasks 
 
 INFO  [2013-12-04 19:29:13,675] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
 INFO  [2013-12-04 19:29:13,678] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-12-05 02:21:38,611] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-12-05 02:21:38,846] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-12-05 02:21:38,889] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-12-05 02:21:39,190] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-12-05 02:21:39,429] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    POST    /auth/login (com.eventplanner.api.resources.LoginResource)
+    POST    /auth/logout (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /stakeholders/{category} (com.eventplanner.api.resources.StakeHolderResource)
+    POST    /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
+    GET     /plan (com.eventplanner.api.resources.PlanResource)
+    GET     /plan/{number} (com.eventplanner.api.resources.PlanResource)
+    POST    /plan (com.eventplanner.api.resources.PlanResource)
+    GET     /index (com.eventplanner.ui.resources.SignUpResource)
+    GET     /home (com.eventplanner.ui.resources.HomeResource)
+    GET     /customer (com.eventplanner.ui.resources.CustomerResource)
+    GET     /serviceprovider (com.eventplanner.ui.resources.ServiceProviderResource)
+    GET     /plan/build (com.eventplanner.ui.resources.MakePlanResource)
+    GET     /main (com.eventplanner.ui.resources.MainViewResouce)
+    GET     /about (com.eventplanner.ui.resources.AboutResource)
+    GET     /register (com.eventplanner.ui.resources.RegisterResource)
+    GET     /team (com.eventplanner.ui.resources.TeamResource)
+    GET     /login (com.eventplanner.ui.resources.LoginViewResource)
+
+INFO  [2013-12-05 02:21:39,429] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-12-05 02:21:40,299] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-12-05 02:21:40,303] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-12-05 02:26:22,971] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-12-05 02:26:23,041] com.yammer.dropwizard.cli.ServerCommand: Starting eventplanner-service
+INFO  [2013-12-05 02:26:23,043] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-12-05 02:26:23,136] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-12-05 02:26:23,226] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    POST    /auth/login (com.eventplanner.api.resources.LoginResource)
+    POST    /auth/logout (com.eventplanner.api.resources.LoginResource)
+    GET     / (com.eventplanner.api.resources.RootResources)
+    GET     /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /stakeholders/{category} (com.eventplanner.api.resources.StakeHolderResource)
+    POST    /stakeholders (com.eventplanner.api.resources.StakeHolderResource)
+    GET     /users (com.eventplanner.api.resources.UserResource)
+    GET     /users/{name} (com.eventplanner.api.resources.UserResource)
+    POST    /users (com.eventplanner.api.resources.UserResource)
+    GET     /plan (com.eventplanner.api.resources.PlanResource)
+    GET     /plan/{number} (com.eventplanner.api.resources.PlanResource)
+    POST    /plan (com.eventplanner.api.resources.PlanResource)
+    GET     /index (com.eventplanner.ui.resources.SignUpResource)
+    GET     /home (com.eventplanner.ui.resources.HomeResource)
+    GET     /customer (com.eventplanner.ui.resources.CustomerResource)
+    GET     /serviceprovider (com.eventplanner.ui.resources.ServiceProviderResource)
+    GET     /plan/build (com.eventplanner.ui.resources.MakePlanResource)
+    GET     /main (com.eventplanner.ui.resources.MainViewResouce)
+    GET     /about (com.eventplanner.ui.resources.AboutResource)
+    GET     /register (com.eventplanner.ui.resources.RegisterResource)
+    GET     /team (com.eventplanner.ui.resources.TeamResource)
+    GET     /login (com.eventplanner.ui.resources.LoginViewResource)
+
+INFO  [2013-12-05 02:26:23,226] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-12-05 02:26:23,670] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-12-05 02:26:23,673] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081

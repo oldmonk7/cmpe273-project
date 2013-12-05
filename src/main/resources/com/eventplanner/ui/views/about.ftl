@@ -79,7 +79,7 @@
 							<a class="selected"  href="#">About</a>
 							
 							<a href="/plan/build">Plan Event</a>
-                            <a href="/myplan">My Plan</a>
+                            <!--<a href="/myplan">My Plan</a>-->
                             <a href="/team">Team</a>
                             <a href="/register">Register</a>
                              <a href="/login">Log In</a>
