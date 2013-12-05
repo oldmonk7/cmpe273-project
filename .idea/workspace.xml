@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b45984a-6853-4788-96ed-d0db96b97734" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/about.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/about.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/app.log" afterPath="$PROJECT_DIR$/logs/app.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/login.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/login.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/plan.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/plan.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/register.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/register.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/serviceprovider.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/serviceprovider.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/team.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/team.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eventplanner.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,6 +42,8 @@
     <file path="$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/TeamResource.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386172963470" ignored="false" />
     <file path="/TeamResource.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386173286058" ignored="false" />
     <file path="/TeamView.java" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386173079060" ignored="false" />
+    <file path="/pom.xml" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386211921051" ignored="false" />
+    <file path="/dev_config.yml" changelist="4b45984a-6853-4788-96ed-d0db96b97734" time="1386212199070" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,10 +183,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EventPlanningService.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EventPlanningService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="64" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.61340207">
+            <state line="58" column="64" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dev_config.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/dev_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="28" selection-start="698" selection-end="718" vertical-scroll-proportion="0.038659792">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="143" column="59" selection-start="3948" selection-end="3948" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -258,24 +273,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/CustomerView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerResource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/CustomerResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -294,8 +291,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/MyPlanResource.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/eventplanner/ui/views/event.mustache" />
         <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/MainViewResouce.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/MainView.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/js/common.js" />
@@ -310,6 +305,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/views/TeamView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/TeamResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/config/dev_config.yml" />
       </list>
     </option>
   </component>
@@ -878,7 +875,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -893,7 +890,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.6712538" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.6712538" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -967,13 +964,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/domain/Plan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="21" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/resources/PlanResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="65" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
@@ -995,11 +985,6 @@
         <state line="11" column="60" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/dev_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="27" selection-start="300" selection-end="466" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/ui/resources/SignUpResource.java">
@@ -1076,7 +1061,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eventplanner/api/EventPlanningService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="64" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.61340207">
+        <state line="58" column="64" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="59" selection-start="3948" selection-end="3948" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/dev_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="28" selection-start="698" selection-end="718" vertical-scroll-proportion="0.038659792">
           <folding />
         </state>
       </provider>
