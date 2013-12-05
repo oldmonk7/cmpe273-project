@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b45984a-6853-4788-96ed-d0db96b97734" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/dev_config.yml" afterPath="$PROJECT_DIR$/config/dev_config.yml" />
     </list>
     <ignored path="eventplanner.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -195,7 +194,7 @@
       <file leaf-file-name="dev_config.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/dev_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="28" selection-start="698" selection-end="718" vertical-scroll-proportion="0.038659792">
+            <state line="9" column="17" selection-start="260" selection-end="260" vertical-scroll-proportion="0.34793815">
               <folding />
             </state>
           </provider>
@@ -1075,7 +1074,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/dev_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="28" selection-start="698" selection-end="718" vertical-scroll-proportion="0.038659792">
+        <state line="9" column="17" selection-start="260" selection-end="260" vertical-scroll-proportion="0.34793815">
           <folding />
         </state>
       </provider>
